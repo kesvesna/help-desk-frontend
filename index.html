@@ -88,15 +88,31 @@
         </div>
     </div>
 </div>
+<div class="collapse fixed-bottom mx-auto" style="width: 90vw; border-radius: 16px;
+          box-shadow: 0 10px 60px rgba(0, 0, 0, 0.4);" id="navbarToggleExternalContent">
+    <div class="pt-3 d-flex align-items-center"
+         style=" flex-direction: column; padding-bottom: 12vh;
+          background: rgba(255, 200, 225, 0.2);
+          border-radius: 16px;
+          backdrop-filter: blur(5px);
+          -webkit-backdrop-filter: blur(5px);
+          border: 1px solid rgba(255, 255, 255, 0.5);">
+        <a class="nav-link" href="./chat/index.html">Чат</a>
+        <a class="nav-link" href="#">Ремонты</a>
+        <a class="nav-link" href="#">Акты</a>
+        <a class="nav-link" href="#">Запчасти</a>
+        <a class="nav-link" href="#">Склад</a>
+    </div>
+</div>
 <nav class="navbar fixed-bottom">
     <div class="container justify-content-around">
         <a href="#">
             <img src="./icons/home.svg" alt="Profile icon" width="30" height="30">
         </a>
-        <a href="#">
-            <img src="./icons/menu.svg" alt="Profile icon" width="30" height="30">
-        </a>
-        <a href="#">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <a href="./admin/index.html">
             <img src="./icons/profile.svg" alt="Profile icon" width="30" height="30">
         </a>
     </div>

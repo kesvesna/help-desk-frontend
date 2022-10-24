@@ -1,0 +1,41 @@
+body {
+    background-image: url("../img/main_background.png");
+    background-size: 100% 100%;
+    min-height: 100vh;
+}
+
+.navbar {
+    background: rgba( 255, 255, 255, 0.1 );
+    backdrop-filter: blur( 1px );
+    -webkit-backdrop-filter: blur( 1px );
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    height: 10vh;
+    min-height: 10vh;
+}
+
+.container-fluid {
+    min-height: 90vh;
+}
+
+.top-slide {
+    background: rgba( 255, 255, 255, 0.1 );
+    backdrop-filter: blur( 1px );
+    -webkit-backdrop-filter: blur( 1px );
+    border-radius: 5px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.top-slide a {
+    text-decoration: none;
+}
+
+.owl-nav {
+    display: none;
+}
+
+.owl-dots {
+    padding: 1rem 0 0 0;
+}
+
+
+

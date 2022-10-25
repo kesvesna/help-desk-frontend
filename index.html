@@ -98,23 +98,20 @@
           -webkit-backdrop-filter: blur(10px);
           border: 1px solid rgba(255, 255, 255, 0.5);">
         <a class="nav-link" href="./chat/index.html"><h5>Чат</h5></a>
-        <a class="nav-link" href="#"><h5>Ремонты</h5></a>
-        <a class="nav-link" href="#"><h5>Акты</h5></a>
-        <a class="nav-link" href="#"><h5>Запчасти</h5></a>
-        <a class="nav-link" href="#"><h5>Склад</h5></a>
+        <a class="nav-link" href="./admin/index.html"><h5>Админ панель</h5></a>
     </div>
 </div>
 <nav class="navbar fixed-bottom">
     <div class="container justify-content-around">
-        <a href="#">
+        <a href="index.html">
             <img src="./icons/home.svg" alt="Profile icon" width="30" height="30">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <a href="./admin/index.html">
-            <img src="./icons/profile.svg" alt="Profile icon" width="30" height="30">
-        </a>
+        <button onClick="history.back()" class="btn">
+            <img src="./icons/back.svg" alt="Profile icon" width="30" height="30">
+        </button>
     </div>
 </nav>
 <script defer src="./bootstrap/js/bootstrap.min.js"></script>

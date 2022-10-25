@@ -1,13 +1,8 @@
-.chat-users-box {
-    height: 85vh;
-}
-
-.users-list {
-    height: 70vh;
+.body-users-list {
     overflow-y: scroll;
 }
 
-.messages-list {
-    height: 55vh;
+.body-messages {
     overflow-y: scroll;
+    overflow-x: hidden;
 }

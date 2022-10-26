@@ -7,14 +7,23 @@
     overflow-x: hidden;
 }
 
-.chat-messages-box {
-    height: 85vh;
-}
-
 @media (min-width: 1px) and (max-width: 576px){
     .chat-messages-box {
         padding-top: 5vh;
         padding-bottom: 13vh;
+        height: 100vh;
+    }
+
+    .body-users-list {
+        height: 50vh;
+    }
+
+    .chat-users-box {
+        height: 60vh;
+    }
+
+    .body-messages {
+        height: 90vh;
     }
 }
 
@@ -22,5 +31,21 @@
     .chat-messages-box {
         padding-top: 0;
         padding-bottom: 2vh;
+    }
+
+    .body-users-list {
+        height: 74vh;
+    }
+
+    .chat-users-box {
+        height: 85vh;
+    }
+
+    .body-messages {
+        height: 66vh;
+    }
+
+    .chat-messages-box {
+        height: 85vh;
     }
 }

@@ -15,7 +15,7 @@
 </head>
 <body>
 <div class="container-fluid">
-    <h5 style="color: white;" class="pt-5">Акты</h5>
+    <h5 style="color: white;" class="pt-3">Акты</h5>
     <button class="btn btn-success mb-2">Сброс всех фильтров</button>
     <a href="create.html" class="btn btn-warning mb-2">Заполнить акт</a>
 
@@ -26,39 +26,40 @@
     border: 1px solid rgba( 255, 255, 255, 0.18 );">
         <thead>
         <tr>
-            <th scope="col">Дата
+            <th scope="col" style="width: 15%;" class="d-none d-sm-table-cell">Дата
                 <button class="btn">
                     <img class="" src="../icons/arrow-down-up.svg" alt="Arrow-down-up" width="20" height="20">
                 </button>
             </th>
-            <th scope="col">ТРК
+            <th scope="col" style="width: 20%;"  class="d-none d-lg-table-cell">ТРК
                 <button class="btn">
                     <img class="" src="../icons/arrow-down-up.svg" alt="Arrow-down-up" width="20" height="20">
                 </button>
             </th>
-            <th scope="col">Тип
+            <th scope="col" style="width: 20%;" class="d-none d-md-table-cell">Тип
                 <button class="btn">
                     <img class="" src="../icons/arrow-down-up.svg" alt="Arrow-down-up" width="20" height="20">
                 </button>
             </th>
-            <th scope="col">Помещение</th>
-            <th scope="col">Оборудование</th>
+            <th scope="col" style="width: 15%;"  class="d-none d-lg-table-cell">Помещение</th>
+            <th scope="col" colspan="4">Оборудование</th>
         </tr>
         </thead>
         <tbody>
         <tr>
-            <td>
-                <input  style="background: rgba( 255, 255, 255, 0.5 );" name="date" type="text" class="form-control" placeholder="Поиск" aria-label="date" aria-describedby="date">
+            <td class="d-none d-sm-table-cell">
+                <input  style="background: rgba( 255, 255, 255, 0.5 );" name="date" type="datetime-local" class="form-control" placeholder="Поиск" aria-label="date" aria-describedby="date">
             </td>
-            <td>
+            <td class="d-none d-lg-table-cell">
                 <select class="form-select" aria-label="trk" style="background: rgba( 255, 255, 255, 0.5 );" >
                     <option selected>Все</option>
                     <option value="1">Академ Парк</option>
                     <option value="2">Родео Драйв</option>
                     <option value="3">Гудзон</option>
+                    <option value="4">Европолис (м.Ростокино)</option>
                 </select>
             </td>
-            <td>
+            <td class="d-none d-md-table-cell">
                 <select class="form-select" aria-label="type" style="background: rgba( 255, 255, 255, 0.5 );" >
                     <option selected>Все</option>
                     <option value="1">Вентиляция</option>
@@ -66,33 +67,60 @@
                     <option value="3">Электрооборудование</option>
                 </select>
             </td>
-            <td>
+            <td class="d-none d-lg-table-cell">
                 <input  style="background: rgba( 255, 255, 255, 0.5 );" name="room" type="text" class="form-control" placeholder="Поиск" aria-label="room" aria-describedby="room">
             </td>
-            <td>
+            <td colspan="4">
                 <input  style="background: rgba( 255, 255, 255, 0.5 );" name="equipment" type="text" class="form-control" placeholder="Поиск" aria-label="equipment" aria-describedby="equipment">
             </td>
         </tr>
         <tr style="color: white;">
-            <td>11-11-2022 14:54</td>
-            <td>Академ Парк</td>
-            <td>Вентиляция</td>
-            <td>ВК-12</td>
+            <td class="d-none d-sm-table-cell">11-11-2022 14:54</td>
+            <td class="d-none d-lg-table-cell">Академ Парк</td>
+            <td class="d-none d-md-table-cell">Вентиляция</td>
+            <td class="d-none d-lg-table-cell">ВК-12</td>
             <td>ПВ-9</td>
+            <td>
+                <img src="../icons/eye.svg" alt="eye picture" width="23" height="23">
+            </td>
+            <td>
+                <img  src="../icons/edit.svg" alt="edit picture" width="23" height="21">
+            </td>
+            <td>
+                <img src="../icons/delete.svg" alt="delete picture" width="23" height="23">
+            </td>
         </tr>
         <tr style="color: white;">
-            <td>11-11-2022 12:57</td>
-            <td>Родео Драйв</td>
-            <td>Кондиционирование</td>
-            <td>B-13</td>
+            <td class="d-none d-sm-table-cell">11-11-2022 12:57</td>
+            <td class="d-none d-lg-table-cell">Родео Драйв</td>
+            <td class="d-none d-md-table-cell">Кондиционирование</td>
+            <td class="d-none d-lg-table-cell">B-13</td>
             <td>Ф-59</td>
+            <td>
+                <img src="../icons/eye.svg" alt="eye picture" width="23" height="23">
+            </td>
+            <td>
+                <img  src="../icons/edit.svg" alt="edit picture" width="23" height="21">
+            </td>
+            <td>
+                <img src="../icons/delete.svg" alt="delete picture" width="23" height="23">
+            </td>
         </tr>
         <tr style="color: white;">
-            <td>11-11-2022 12:54</td>
-            <td>Гудзон</td>
-            <td>Электрооборудование</td>
-            <td>ГРЩ-2</td>
+            <td class="d-none d-sm-table-cell">11-11-2022 12:54</td>
+            <td class="d-none d-lg-table-cell">Гудзон</td>
+            <td class="d-none d-md-table-cell">Электрооборудование</td>
+            <td class="d-none d-lg-table-cell">ГРЩ-2</td>
             <td>Розетка</td>
+            <td>
+                <img src="../icons/eye.svg" alt="eye picture" width="23" height="23">
+            </td>
+            <td>
+                <img  src="../icons/edit.svg" alt="edit picture" width="23" height="21">
+            </td>
+            <td>
+                <img src="../icons/delete.svg" alt="delete picture" width="23" height="23">
+            </td>
         </tr>
         </tbody>
     </table>

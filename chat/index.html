@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="../css/chat_styles.css">
 </head>
 <body>
+<main>
 <div class="container " style="height: 90vh;">
     <div class="row chat-box pt-4">
         <div class="col-sm-4 chat-users-box">
@@ -370,12 +371,13 @@
         <a class="nav-link" href="../admin/index.html"><h5>Админ панель</h5></a>
     </div>
 </div>
-<nav class="navbar fixed-bottom">
-    <div class="container justify-content-around">
-        <a href="../index.html">
+</main>
+<footer>
+    <nav class="navbar fixed-bottom justify-content-around">
+        <a href="../index.html" class="btn">
             <img src="../icons/home.svg" alt="Profile icon" width="30" height="30">
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+        <button class="navbar-toggler btn" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
                 aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -383,8 +385,8 @@
         <button onClick="history.back()" class="btn">
             <img src="../icons/back.svg" alt="Profile icon" width="30" height="30">
         </button>
-    </div>
-</nav>
+    </nav>
+</footer>
 <script type="text/javascript">
     const block = document.getElementById("body-messages");
     block.scrollTop = block.scrollHeight;

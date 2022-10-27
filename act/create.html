@@ -25,7 +25,7 @@
                   class="pt-2 pb-3">
                 <div class="d-flex justify-content-center">
                     <div class="col-10">
-                        <h5 style="color: white;">Акт выполненных работ</h5>
+                        <h4 style="color: white;">Акт выполненных работ</h4>
                     </div>
                 </div>
                 <div class="mb-2 d-lg-flex justify-content-around">
@@ -79,11 +79,22 @@
                 </div>
                 <div class="mb-2 d-lg-flex justify-content-around">
                     <div class="col-11 col-sm-10 col-md-10 col-lg-4 mx-auto">
-                        <label for="room_name" class="form-label" style="color: white;">Помещение</label>
-                        <input type="text" class="form-control" id="room_name" name="room_name" style="background: rgba( 255, 255, 255, 0.5 );"></div>
+                        <label for="room_id" class="form-label" style="color: white;">Помещение</label>
+                        <select id="room_id" name="room_id" class="form-select" style="background: rgba( 255, 255, 255, 0.5 );">
+                            <option value="1">А-15</option>
+                            <option value="2">В-23</option>
+                            <option value="3">С-14</option>
+                            <option value="4">D-22</option>
+                        </select>
+                    </div>
                     <div class="col-11 col-sm-10 col-md-10 col-lg-4 mx-auto">
-                        <label for="equipment_name" class="form-label" style="color: white;">Оборудование<wbr> (по&nbsp;проекту)</label>
-                        <input type="text" class="form-control" id="equipment_name" name="equipment_name" style="background: rgba( 255, 255, 255, 0.5 );">
+                        <label for="equipment_id" class="form-label" style="color: white;">Оборудование<wbr> (по&nbsp;проекту)</label>
+                        <select id="equipment_id" name="equipment_id" class="form-select" style="background: rgba( 255, 255, 255, 0.5 );">
+                            <option value="1">ПВ-01-М</option>
+                            <option value="2">ПВ-02-М</option>
+                            <option value="3">ПВ-03-М</option>
+                            <option value="4">ПВ-04-М</option>
+                        </select>
                     </div>
                 </div>
                 <div class="mb-3">
@@ -100,7 +111,7 @@
                 <div class="mb-3">
                     <div class="col-11 col-xs-10 col-sm-10 col-md-10 mx-auto">
                         <label for="comment" class="form-label" style="color: white;">Описание работ</label>
-                        <textarea class="form-control" id="comment" name="comment" rows="3" style="background: rgba( 255, 255, 255, 0.5 );"></textarea>
+                        <textarea class="form-control" id="comment" name="comment" rows="2" style="background: rgba( 255, 255, 255, 0.5 );"></textarea>
                     </div>
                 </div>
                 <div class="mb-3">
@@ -132,16 +143,10 @@
             </form>
         </div>
     </div>
-    <div class="collapse fixed-bottom mx-auto" style="width: 60vw; border-radius: 16px;
-          box-shadow: 0 10px 60px rgba(0, 0, 0, 0.4); margin-bottom: 10vh;" id="navbarToggleExternalContent">
-        <div class="pt-3 pb-3 d-flex align-items-center"
-             style=" flex-direction: column;
-          background: rgba(255, 255, 255, 0.5);
-          border-radius: 10px;
-          backdrop-filter: blur(10px);
-          -webkit-backdrop-filter: blur(10px);
-          border: 1px solid rgba(255, 255, 255, 0.5);">
+    <div class="collapse fixed-bottom mx-auto bottom-frontend-menu" id="navbarToggleExternalContent">
+        <div class="pt-3 pb-3 d-flex align-items-center bottom-frontend-menu-child">
             <a class="nav-link" href="../chat/index.html"><h5>Чат</h5></a>
+            <a class="nav-link" href="index.html"><h5>Акты</h5></a>
             <a class="nav-link" href="../admin/index.html"><h5>Админ панель</h5></a>
         </div>
     </div>

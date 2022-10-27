@@ -4,13 +4,19 @@ body {
     min-height: 100vh;
 }
 
+main {
+    height: 90vh;
+}
+
+footer {
+    height: 10vh;
+}
+
 .navbar {
     background: rgba( 255, 255, 255, 0.1 );
     backdrop-filter: blur( 1px );
     -webkit-backdrop-filter: blur( 1px );
     border: 1px solid rgba( 255, 255, 255, 0.18 );
-    height: 10vh;
-    min-height: 10vh;
 }
 
 .message {
@@ -32,6 +38,7 @@ body {
     -webkit-backdrop-filter: blur( 1px );
     border-radius: 5px;
     border: 1px solid rgba( 255, 255, 255, 0.18 );
+    margin-bottom: 15vh;
 }
 
 .top-slide a {
@@ -43,7 +50,6 @@ body {
 }
 
 .owl-dots {
-    padding: 1rem 0 0 0;
 }
 
 

@@ -16,23 +16,28 @@
 <body>
 <main>
     <div class="container-fluid">
-        <div class="container col-10 pt-3">
+        <div class="container col-10 pt-3" style="padding-bottom: 15vh;">
             <form style="background: rgba( 255, 255, 255, 0.1 );
-    backdrop-filter: blur( 1px );
-    -webkit-backdrop-filter: blur( 1px );
-    border-radius: 5px;
-    border: 1px solid rgba( 255, 255, 255, 0.18 );" class="pt-2 pb-3">
+                            backdrop-filter: blur( 1px );
+                            -webkit-backdrop-filter: blur( 1px );
+                            border-radius: 5px;
+                            border: 1px solid rgba( 255, 255, 255, 0.18 );"
+                  class="pt-2 pb-3">
                 <div class="d-flex justify-content-center">
                     <div class="col-10">
                         <h5 style="color: white;">Акт выполненных работ</h5>
                     </div>
                 </div>
-                <div class="mb-2 d-lg-flex justify-content-lg-around justify-content-md-center">
+                <div class="mb-2 d-lg-flex justify-content-around">
                     <div class="col-11 col-sm-10 col-md-10 col-lg-4 mx-auto">
                         <label class="mb-2" for="date" style="color: white;">Дата и время:</label>
                         <br>
                         <input type="datetime-local" id="date" name="date" class="form-control" style="background: rgba( 255, 255, 255, 0.5 );">
                     </div>
+                    <div class="col-11 col-sm-10 col-md-10 col-lg-4 mx-auto">
+                        </div>
+                </div>
+                <div class="mb-2 d-lg-flex justify-content-around">
                     <div class="col-11 col-sm-10 col-md-10 col-lg-4 mx-auto">
                         <label for="trk_id" class="form-label" style="color: white;">Торговый комплекс</label>
                         <select id="trk_id" name="trk_id" class="form-select" style="background: rgba( 255, 255, 255, 0.5 );">
@@ -40,10 +45,9 @@
                             <option value="2">Гудзон</option>
                             <option value="3">Европолис (м.Лесная)</option>
                             <option value="4">Родео Драйв</option>
+                            <option value="5">Европолис (м.Ростокино)</option>
                         </select>
                     </div>
-                </div>
-                <div class="mb-2 d-lg-flex justify-content-around">
                     <div class="col-11 col-sm-10 col-md-10 col-lg-4 mx-auto">
                         <label for="system_id" class="form-label" style="color: white;">Тип оборудования</label>
                         <select id="system_id" name="system_id" class="form-select" style="background: rgba( 255, 255, 255, 0.5 );">
@@ -53,28 +57,72 @@
                             <option value="4">Водоотведение</option>
                         </select>
                     </div>
-                    <div class="col-11 col-sm-10 col-md-10 col-lg-4 mx-auto" >
-                        <div class="form-check" style="display: inline-block; color: white;">
-                            <input type="radio" class="form-check-input" id="room" name="room_or_renter" value="room" checked>Помещение
-                            <label class="form-check-label" for="room"></label>
-                        </div>
-                        <div class="form-check mb-2" style="display: inline-block; color: white;">
-                            <input type="radio" class="form-check-input" id="renter" name="room_or_renter" value="renter">Арендатор
-                            <label class="form-check-label" for="renter"></label>
-                        </div>
-                        <input type="text" class="form-control" id="room_id" name="room_id" style="background: rgba( 255, 255, 255, 0.5 );">
+                </div>
+                <div class="mb-2 d-lg-flex justify-content-around">
+                    <div class="col-11 col-sm-10 col-md-10 col-lg-4 mx-auto">
+                        <label for="building_id" class="form-label" style="color: white;">Блок/Зона</label>
+                        <select id="building_id" name="building_id" class="form-select" style="background: rgba( 255, 255, 255, 0.5 );">
+                            <option value="1">Блок 1</option>
+                            <option value="2">Блок 2</option>
+                            <option value="3">Блок 3</option>
+                        </select>
+                    </div>
+                    <div class="col-11 col-sm-10 col-md-10 col-lg-4 mx-auto">
+                        <label for="floor_id" class="form-label" style="color: white;">Этаж</label>
+                        <select id="floor_id" name="floor_id" class="form-select" style="background: rgba( 255, 255, 255, 0.5 );">
+                            <option value="1">Парковка -2</option>
+                            <option value="2">Парковка -1</option>
+                            <option value="3">Этаж 1</option>
+                            <option value="4">Этаж 2</option>
+                        </select>
                     </div>
                 </div>
-                <div class="mb-2">
-                    <div class="col-11 col-sm-10 col-md-10 mx-auto">
-                        <label for="equipment_name" class="form-label" style="color: white;">Оборудование (по проекту)</label>
+                <div class="mb-2 d-lg-flex justify-content-around">
+                    <div class="col-11 col-sm-10 col-md-10 col-lg-4 mx-auto">
+                        <label for="room_name" class="form-label" style="color: white;">Помещение</label>
+                        <input type="text" class="form-control" id="room_name" name="room_name" style="background: rgba( 255, 255, 255, 0.5 );"></div>
+                    <div class="col-11 col-sm-10 col-md-10 col-lg-4 mx-auto">
+                        <label for="equipment_name" class="form-label" style="color: white;">Оборудование<wbr> (по&nbsp;проекту)</label>
                         <input type="text" class="form-control" id="equipment_name" name="equipment_name" style="background: rgba( 255, 255, 255, 0.5 );">
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <div class="col-11 col-xs-10 col-sm-10 col-md-10 mx-auto">
+                        <label for="work_id" class="form-label" style="color: white;">Выполненные работы</label>
+                        <select id="work_id" name="work_id" class="form-select" style="background: rgba( 255, 255, 255, 0.5 );">
+                            <option value="1">Замена подшипников</option>
+                            <option value="2">Сухая чистка калорифера</option>
+                            <option value="3">Ремонт</option>
+                            <option value="4">Замена воздушного панельного фильтра вытяжки</option>
+                        </select>
                     </div>
                 </div>
                 <div class="mb-3">
                     <div class="col-11 col-xs-10 col-sm-10 col-md-10 mx-auto">
                         <label for="comment" class="form-label" style="color: white;">Описание работ</label>
                         <textarea class="form-control" id="comment" name="comment" rows="3" style="background: rgba( 255, 255, 255, 0.5 );"></textarea>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <div class="col-11 col-xs-10 col-sm-10 col-md-10 mx-auto">
+                        <label for="comment" class="form-label" style="color: white;">Замечания</label>
+                        <textarea class="form-control" id="remark" name="remark" rows="2" style="background: rgba( 255, 255, 255, 0.5 );"></textarea>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <div class="col-11 col-xs-10 col-sm-10 col-md-10 mx-auto">
+                        <label for="comment" class="form-label" style="color: white;">Рекомендации</label>
+                        <textarea class="form-control" id="recommendation" name="recommendation" rows="2" style="background: rgba( 255, 255, 255, 0.5 );"></textarea>
+                    </div>
+                </div>
+                <div class="mb-5">
+                    <div class="col-11 col-xs-10 col-sm-10 col-md-10 mx-auto">
+                        <label for="user_id" class="form-label" style="color: white;">Исполнители</label>
+                        <select id="user_id" name="user_id" class="form-select" style="background: rgba( 255, 255, 255, 0.5 );">
+                            <option value="1">Иванов И.И.</option>
+                            <option value="2">Петров П.П.</option>
+                            <option value="3">Сидоров С.С.</option>
+                        </select>
                     </div>
                 </div>
                 <div class="d-grid gap-2 d-sm-flex justify-content-sm-between col-11 mx-auto col-sm-10">
@@ -100,7 +148,7 @@
 </main>
 <footer>
     <nav class="navbar fixed-bottom justify-content-around">
-        <a href="index.html" class="btn">
+        <a href="../index.html" class="btn">
             <img src="../icons/home.svg" alt="Profile icon" width="30" height="30">
         </a>
         <button class="navbar-toggler btn" type="button" data-bs-toggle="collapse"

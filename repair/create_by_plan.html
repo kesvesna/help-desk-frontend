@@ -28,6 +28,15 @@
                         <h4 style="color: white;">Ремонт</h4>
                     </div>
                 </div>
+                <div class="mb-2 d-lg-flex justify-content-around">
+                    <div class="col-11 col-sm-10 col-md-10 col-lg-4 mx-auto">
+                        <label class="mb-2" for="date" style="color: white;">Дата и время:</label>
+                        <br>
+                        <input type="datetime-local" id="date" name="date" class="form-control" style="background: rgba( 255, 255, 255, 0.5 );">
+                    </div>
+                    <div class="col-11 col-sm-10 col-md-10 col-lg-4 mx-auto">
+                    </div>
+                </div>
                 <div class="mb-3 d-lg-flex justify-content-around">
                     <div class="col-11 col-sm-10 col-md-10 col-lg-4 mx-auto">
                         <label for="trk_id" class="form-label" style="color: white;">Торговый комплекс</label>
@@ -62,7 +71,7 @@
                 </div>
                 <div class="d-grid gap-2 d-sm-flex justify-content-sm-between col-11 mx-auto col-sm-10">
                     <button class="btn btn-danger col-sm-5" type="button">Сохранить</button>
-                    <button class="btn btn-success col-sm-5" type="button">Назад</button>
+                    <button onClick="history.back()"  class="btn btn-success col-sm-5" type="button">Назад</button>
                 </div>
             </form>
         </div>

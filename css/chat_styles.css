@@ -1,51 +1,15 @@
-.body-users-list {
-    overflow-y: scroll;
+.chats-list {
+    overflow-y: auto;
 }
 
 .body-messages {
-    overflow-y: scroll;
+    overflow-y: auto;
     overflow-x: hidden;
+    height: 70vh;
 }
 
 @media (min-width: 1px) and (max-width: 576px){
-    .chat-messages-box {
-        padding-top: 5vh;
-        padding-bottom: 13vh;
-        height: 100vh;
-    }
-
-    .body-users-list {
-        height: 50vh;
-    }
-
-    .chat-users-box {
-        height: 60vh;
-    }
-
-    .body-messages {
-        height: 90vh;
-    }
 }
 
 @media (min-width: 576px) {
-    .chat-messages-box {
-        padding-top: 0;
-        padding-bottom: 2vh;
-    }
-
-    .body-users-list {
-        height: 74vh;
-    }
-
-    .chat-users-box {
-        height: 85vh;
-    }
-
-    .body-messages {
-        height: 66vh;
-    }
-
-    .chat-messages-box {
-        height: 85vh;
-    }
 }

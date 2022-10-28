@@ -28,8 +28,15 @@
                         <h4 style="color: white;">Заявка</h4>
                     </div>
                 </div>
-                <div class="mb-3 d-lg-flex justify-content-around">
-                    <div class="col-11 col-sm-10 col-md-10 col-lg-4 mx-auto">
+                <div class="col-10 mx-auto">
+                    <div class="col-3">
+                        <input disabled type="datetime-local" id="date" name="date" class="form-control mb-3" style="background: rgba( 255, 255, 255, 0.5 );">
+                    </div>
+                    <div class="col-3">
+                    </div>
+                </div>
+                <div class="mb-3 d-lg-flex justify-content-between col-10 mx-auto">
+                    <div class="col-11 col-sm-10 col-md-10 col-lg-3">
                         <label for="trk_id" class="form-label" style="color: white;">Торговый комплекс</label>
                         <select disabled id="trk_id" name="trk_id" class="form-select" style="background: rgba( 255, 255, 255, 0.5 );">
                             <option value="1">Академ Парк</option>
@@ -39,13 +46,22 @@
                             <option value="5">Европолис (м.Ростокино)</option>
                         </select>
                     </div>
-                    <div class="col-11 col-sm-10 col-md-10 col-lg-4 mx-auto">
+                    <div class="col-11 col-sm-10 col-md-10 col-lg-3">
                         <label for="system_id" class="form-label" style="color: white;">Подразделение</label>
                         <select disabled id="system_id" name="system_id" class="form-select" style="background: rgba( 255, 255, 255, 0.5 );">
                             <option value="1">Служба эксплуатации</option>
                             <option value="2">Администрация</option>
                             <option value="3">ХВО</option>
                             <option value="4">АСУ</option>
+                        </select>
+                    </div>
+                    <div class="col-11 col-xs-11 col-sm-10 col-md-10 col-lg-2">
+                        <label for="status_id" class="form-label" style="color: white;">Статус заявки</label>
+                        <select disabled id="status_id" name="status_id" class="form-select" style="background: rgba( 255, 255, 255, 0.5 );">
+                            <option value="1">Новая</option>
+                            <option value="2">В обработке</option>
+                            <option value="3">Ремонт</option>
+                            <option value="4">Выполнена</option>
                         </select>
                     </div>
                 </div>
@@ -60,9 +76,42 @@
                         <img src="../img/second.jpg" alt="Application image" class="col-6">
                 </div>
                 </div>
+                <div class="mb-4">
+                    <div class="col-11 col-xs-10 col-sm-10 col-md-10 mx-auto">
+                        <h5>Новая:</h5>
+                        <div class="btn-group col-12" role="group" aria-label="Application status">
+                            <button type="button" class="btn btn-success me-2">Принять</button>
+                            <button type="button" class="btn btn-warning me-2">Перенаправить</button>
+                            <button type="button" class="btn btn-warning me-2">Назначить исполнителя</button>
+                            <button type="button" class="btn btn-danger">Отклонить</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-4">
+                    <div class="col-11 col-xs-10 col-sm-10 col-md-10 mx-auto">
+                        <h5>В обработке:</h5>
+                        <div class="btn-group col-12" role="group" aria-label="Application status">
+                            <button type="button" class="btn btn-success me-2">Закрыть</button>
+                            <button type="button" class="btn btn-warning me-2">В ремонт</button>
+                            <button type="button" class="btn btn-warning me-2">Перенаправить</button>
+                            <button type="button" class="btn btn-warning me-2">Назначить исполнителя</button>
+                            <button type="button" class="btn btn-danger">Отклонить</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-4">
+                    <div class="col-11 col-xs-10 col-sm-10 col-md-10 mx-auto">
+                        <h5>Ремонт:</h5>
+                        <div class="btn-group col-12" role="group" aria-label="Application status">
+                            <button type="button" class="btn btn-success me-2">Закрыть</button>
+                            <button type="button" class="btn btn-warning me-2">Перенаправить</button>
+                            <button type="button" class="btn btn-warning me-2">Назначить исполнителя</button>
+                            <button type="button" class="btn btn-danger">Отклонить</button>
+                        </div>
+                    </div>
+                </div>
                 <div class="d-grid gap-2 d-sm-flex justify-content-sm-between col-11 mx-auto col-sm-10">
-                    <button onClick="history.back()" class="btn btn-success col-sm-5" type="button">Назад</button>
-                    <a href="update.html" class="btn btn-warning col-sm-5" type="button">Редактировать</a>
+                    <button onClick="history.back()" class="btn btn-success col-12" type="button">Назад</button>
                 </div>
             </form>
         </div>

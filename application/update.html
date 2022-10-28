@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Help Desk | FG</title>
+    <link rel="icon" type="image/x-icon" href="../icons/repair.svg">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/application_styles.css">
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../owlcarousel/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../owlcarousel/css/owl.theme.default.min.css">
+</head>
+<body>
+<main>
+    <div class="container-fluid">
+        <div class="container pt-3" style="padding-bottom: 15vh;">
+            <form style="background: rgba( 255, 255, 255, 0.1 );
+                            backdrop-filter: blur( 1px );
+                            -webkit-backdrop-filter: blur( 1px );
+                            border-radius: 5px;
+                            border: 1px solid rgba( 255, 255, 255, 0.18 );"
+                  class="pt-2 pb-3">
+                <div class="d-flex justify-content-center">
+                    <div class="col-10">
+                        <h4 style="color: white;">Обработка заявки</h4>
+                    </div>
+                </div>
+                <div class="mb-2 d-lg-flex justify-content-around">
+                    <div class="col-11 col-sm-10 col-md-10 col-lg-4 mx-auto">
+                        <label class="mb-2" for="date" style="color: white;">Дата и время:</label>
+                        <br>
+                        <input disabled type="datetime-local" id="date" name="date" class="form-control" style="background: rgba( 255, 255, 255, 0.5 );">
+                    </div>
+                    <div class="col-11 col-sm-10 col-md-10 col-lg-4 mx-auto">
+                    </div>
+                </div>
+                <div class="mb-3 d-lg-flex justify-content-around">
+                    <div class="col-11 col-sm-10 col-md-10 col-lg-4 mx-auto">
+                        <label for="trk_id" class="form-label" style="color: white;">Торговый комплекс</label>
+                        <select disabled id="trk_id" name="trk_id" class="form-select" style="background: rgba( 255, 255, 255, 0.5 );">
+                            <option value="1">Академ Парк</option>
+                            <option value="2">Гудзон</option>
+                            <option value="3">Европолис (м.Лесная)</option>
+                            <option value="4">Родео Драйв</option>
+                            <option value="5">Европолис (м.Ростокино)</option>
+                        </select>
+                    </div>
+                    <div class="col-11 col-sm-10 col-md-10 col-lg-4 mx-auto">
+                        <label for="system_id" class="form-label" style="color: white;">Подразделение</label>
+                        <select disabled id="system_id" name="system_id" class="form-select" style="background: rgba( 255, 255, 255, 0.5 );">
+                            <option value="1">Служба эксплуатации</option>
+                            <option value="2">Администрация</option>
+                            <option value="3">ХВО</option>
+                            <option value="4">АСУ</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="mb-4">
+                    <div class="col-11 col-xs-10 col-sm-10 col-md-10 mx-auto">
+                        <label for="comment" class="form-label" style="color: white;">Проблема/Задача</label>
+                        <textarea disabled class="form-control" id="comment" name="comment" rows="2" style="background: rgba( 255, 255, 255, 0.5 );"></textarea>
+                    </div>
+                </div>
+                <div class="mb-4">
+                    <div class="col-11 col-xs-10 col-sm-10 col-md-10 mx-auto">
+                        <img src="../img/second.jpg" alt="Application image" class="col-6">
+                </div>
+                </div>
+                <div class="d-grid gap-2 d-sm-flex justify-content-sm-between col-11 mx-auto col-sm-10">
+                    <div class="btn-group" role="group" aria-label="Application status">
+                        <button type="button" class="btn btn-success me-1">Принять</button>
+                        <button type="button" class="btn btn-light me-1">В ремонт</button>
+                        <button type="button" class="btn btn-success me-1">Закрыть</button>
+                        <button type="button" class="btn btn-warning me-1">Перенаправить</button>
+                        <button type="button" class="btn btn-danger">Отклонить</button>
+                    </div>
+                    <button onClick="history.back()" class="btn btn-success col-sm-4" type="button">Назад</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="collapse fixed-bottom mx-auto bottom-frontend-menu" id="navbarToggleExternalContent">
+        <div class="pt-3 pb-3 d-flex align-items-center bottom-frontend-menu-child">
+            <a class="nav-link" href="../chat/index.html"><h5>Чат заявок</h5></a>
+            <a class="nav-link" href="../application/index.html"><h5>Заявки</h5></a>
+            <a class="nav-link" href="../repair/index.html"><h5>Ремонт</h5></a>
+            <a class="nav-link" href="../act/index.html"><h5>Акты</h5></a>
+            <a class="nav-link" href="../admin/index.html"><h5>Админ панель</h5></a>
+        </div>
+    </div>
+</main>
+<footer>
+    <nav class="navbar fixed-bottom justify-content-around">
+        <a href="../index.html" class="btn">
+            <img src="../icons/home.svg" alt="Profile icon" width="30" height="30">
+        </a>
+        <button class="navbar-toggler btn" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <button onClick="history.back()" class="btn">
+            <img src="../icons/back.svg" alt="Profile icon" width="30" height="30">
+        </button>
+    </nav>
+</footer>
+<script defer src="../bootstrap/js/bootstrap.bundle.min.js"></script>
+<script defer src="../js/jquery.min.js"></script>
+<script defer src="../owlcarousel/js/owl.carousel.min.js"></script>
+<script defer src="../js/carousel_driver.js"></script>
+</body>
+</html>

@@ -1,1 +1,179 @@
-In progress ...
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Help Desk | FG</title>
+    <link rel="icon" type="image/x-icon" href="../icons/repair.svg">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/application_styles.css">
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../owlcarousel/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../owlcarousel/css/owl.theme.default.min.css">
+</head>
+<body>
+<main>
+    <div class="container-fluid">
+        <h5 style="color: white;" class="pt-3">Ремонты</h5>
+        <button class="btn btn-success mb-2">Сброс фильтров</button>
+        <a href="create_by_plan.html" class="btn btn-warning mb-2">Запланировать ремонт</a>
+
+        <table class="table table-bordered table-hover" style="background: rgba( 255, 255, 255, 0.1 );
+    backdrop-filter: blur( 1px );
+    -webkit-backdrop-filter: blur( 1px );
+    border-radius: 5px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );">
+            <thead>
+            <tr>
+                <th scope="col" style="width: 10%;" class="d-none d-sm-table-cell">Дата
+                    <button class="btn">
+                        <img class="" src="../icons/arrow-down-up.svg" alt="Arrow-down-up" width="20" height="20">
+                    </button>
+                </th>
+                <th scope="col" style="width: 20%;"  class="d-none d-lg-table-cell">
+                    ТРК
+                </th>
+                <th scope="col" style="width: 15%;"  class="d-none d-lg-table-cell">
+                    Поздразделение
+                </th>
+                <th scope="col" style="width: 15%;" class="d-none d-md-table-cell">
+                    Статус
+                </th>
+                <th scope="col" colspan="4">Задача</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td class="d-none d-sm-table-cell">
+                    <input  style="background: rgba( 255, 255, 255, 0.5 );" name="date" type="datetime-local" class="form-control" placeholder="Поиск" aria-label="date" aria-describedby="date">
+                </td>
+                <td class="d-none d-lg-table-cell">
+                    <select class="form-select" aria-label="trk" style="background: rgba( 255, 255, 255, 0.5 );" >
+                        <option selected>Все</option>
+                        <option value="1">Академ Парк</option>
+                        <option value="2">Родео Драйв</option>
+                        <option value="3">Гудзон</option>
+                        <option value="4">Европолис (м.Ростокино)</option>
+                    </select>
+                </td>
+                <td class="d-none d-md-table-cell">
+                    <select class="form-select" aria-label="type" style="background: rgba( 255, 255, 255, 0.5 );" >
+                        <option selected>Все</option>
+                        <option value="1">СЭ ТРК</option>
+                        <option value="2">Администрация</option>
+                        <option value="3">ХВО</option>
+                        <option value="3">ТСО</option>
+                        <option value="3">АСУ</option>
+                    </select>
+                </td>
+                <td class="d-none d-md-table-cell">
+                    <select class="form-select" aria-label="type" style="background: rgba( 255, 255, 255, 0.5 );" >
+                        <option selected>Все</option>
+                        <option value="1">По плану</option>
+                        <option value="2">По заявке</option>
+                        <option value="3">Выполнен</option>
+                        <option value="3">Отклонен</option>
+                    </select>
+                </td>
+                <td colspan="4">
+                    <input  style="background: rgba( 255, 255, 255, 0.5 );" name="equipment" type="text" class="form-control" placeholder="Поиск" aria-label="equipment" aria-describedby="equipment">
+                </td>
+            </tr>
+            <tr style="color: white;">
+                <td class="d-none d-sm-table-cell">11-11-2022 10:23</td>
+                <td class="d-none d-lg-table-cell">Академ Парк</td>
+                <td class="d-none d-lg-table-cell">ХВО</td>
+                <td class="d-none d-md-table-cell">Выполнен</td>
+                <td>Замена подшипников</td>
+                <td style="text-align: center; vertical-align: middle;">
+                    <img src="../icons/eye.svg" alt="eye picture" width="23" height="23">
+                </td>
+                <td style="text-align: center; vertical-align: middle;">
+                    <img  src="../icons/edit.svg" alt="edit picture" width="23" height="21">
+                </td>
+                <td style="text-align: center; vertical-align: middle;">
+                    <img src="../icons/delete.svg" alt="delete picture" width="23" height="23">
+                </td>
+            </tr>
+            <tr style="color: white;">
+                <td class="d-none d-sm-table-cell">11-11-2022 10:23</td>
+                <td class="d-none d-lg-table-cell">Европолис</td>
+                <td class="d-none d-lg-table-cell">СЭ</td>
+                <td class="d-none d-md-table-cell">По заявке</td>
+                <td>Приклеить плитку в туалете первого этажа</td>
+                <td style="text-align: center; vertical-align: middle;">
+                    <img src="../icons/eye.svg" alt="eye picture" width="23" height="23">
+                </td>
+                <td style="text-align: center; vertical-align: middle;">
+                    <img  src="../icons/edit.svg" alt="edit picture" width="23" height="21">
+                </td>
+                <td style="text-align: center; vertical-align: middle;">
+                    <img src="../icons/delete.svg" alt="delete picture" width="23" height="23">
+                </td>
+            </tr>
+            <tr style="color: white;">
+                <td class="d-none d-sm-table-cell">11-11-2022 10:23</td>
+                <td class="d-none d-lg-table-cell">Европолис</td>
+                <td class="d-none d-lg-table-cell">ХВО</td>
+                <td class="d-none d-md-table-cell">По плану</td>
+                <td>Замена вытяжки В-09-ОП</td>
+                <td style="text-align: center; vertical-align: middle;">
+                    <img src="../icons/eye.svg" alt="eye picture" width="23" height="23">
+                </td>
+                <td style="text-align: center; vertical-align: middle;">
+                    <img  src="../icons/edit.svg" alt="edit picture" width="23" height="21">
+                </td>
+                <td style="text-align: center; vertical-align: middle;">
+                    <img src="../icons/delete.svg" alt="delete picture" width="23" height="23">
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="collapse fixed-bottom mx-auto" style="width: 60vw; border-radius: 16px;
+          box-shadow: 0 10px 60px rgba(0, 0, 0, 0.4); margin-bottom: 10vh;" id="navbarToggleExternalContent">
+        <div class="pt-3 pb-3 d-flex align-items-center"
+             style=" flex-direction: column;
+          background: rgba(255, 255, 255, 0.5);
+          border-radius: 10px;
+          backdrop-filter: blur(10px);
+          -webkit-backdrop-filter: blur(10px);
+          border: 1px solid rgba(255, 255, 255, 0.5);">
+            <a class="nav-link" href="../chat/index.html"><h5>Чат заявок</h5></a>
+            <a class="nav-link" href="../application/index.html"><h5>Заявки</h5></a>
+            <a class="nav-link" href="../repair/index.html"><h5>Ремонт</h5></a>
+            <a class="nav-link" href="../act/index.html"><h5>Акты</h5></a>
+            <a class="nav-link" href="../admin/index.html"><h5>Админ панель</h5></a>
+        </div>
+    </div>
+    <div class="position-relative">
+        <div class="position-absolute bottom-0 end-0 mb-4 me-3">
+            <a href="create.html">
+                <img src="../icons/plus.svg" alt="Add picture" width="50" height="50">
+            </a>
+        </div>
+    </div>
+</main>
+<footer>
+    <nav class="navbar fixed-bottom justify-content-around">
+        <a href="../index.html" class="btn">
+            <img src="../icons/home.svg" alt="Profile icon" width="30" height="30">
+        </a>
+        <button class="navbar-toggler btn" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <button onClick="history.back()" class="btn">
+            <img src="../icons/back.svg" alt="Profile icon" width="30" height="30">
+        </button>
+    </nav>
+</footer>
+<script defer src="../bootstrap/js/bootstrap.bundle.min.js"></script>
+<script defer src="../js/jquery.min.js"></script>
+<script defer src="../owlcarousel/js/owl.carousel.min.js"></script>
+<script defer src="../js/carousel_driver.js"></script>
+</body>
+</html>

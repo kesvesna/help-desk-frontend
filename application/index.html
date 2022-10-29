@@ -16,11 +16,46 @@
 <body>
 <main>
     <div class="container-fluid">
-        <h5 style="color: white;" class="pt-3">Заявки</h5>
-        <button class="btn btn-success mb-2">Сброс фильтров</button>
-        <a href="create.html" class="btn btn-warning mb-2">Создать заявку</a>
-
-        <table class="table table-bordered table-hover" style="background: rgba( 255, 255, 255, 0.1 );
+        <div class="row col-12 mx-auto row-cols-1 pt-2">
+            <div class="col">
+                <h5 style="color: white;">Заявки</h5>
+            </div>
+            <div class="col pt-2">
+                <button class="btn btn-success btn-sm">Сброс фильтров</button>
+            </div>
+            </div>
+        <div class="row col-12 mx-auto row-cols-1 row-cols-md-2 row-cols-xxl-3 pt-2 d-md-none">
+            <div class="col">
+                <label for="trk_id" class="form-label" style="color: white;">Торговый комплекс</label>
+                <select id="trk_id" name="trk_id" class="form-select" style="background: rgba( 255, 255, 255, 0.5 );">
+                    <option value="1">Академ Парк</option>
+                    <option value="2">Гудзон</option>
+                    <option value="3">Европолис (м.Лесная)</option>
+                    <option value="4">Родео Драйв</option>
+                    <option value="5">Европолис (м.Ростокино)</option>
+                </select>
+            </div>
+            <div class="col">
+                <label for="system_id" class="form-label" style="color: white;">Подразделение</label>
+                <select id="system_id" name="system_id" class="form-select" style="background: rgba( 255, 255, 255, 0.5 );">
+                    <option value="1">Служба эксплуатации</option>
+                    <option value="2">Администрация</option>
+                    <option value="3">ХВО</option>
+                    <option value="4">АСУ</option>
+                </select>
+            </div>
+            <div class="col">
+                <label for="status_id" class="form-label" style="color: white;">Статус заявки</label>
+                <select id="status_id" name="status_id" class="form-select" style="background: rgba( 255, 255, 255, 0.5 );">
+                    <option value="1">Новая</option>
+                    <option value="2">В обработке</option>
+                    <option value="3">Ремонт</option>
+                    <option value="4">Выполнена</option>
+                    <option value="5">Отклонена</option>
+                </select>
+            </div>
+        </div>
+        <table class="table table-bordered table-hover mt-4" style="background: rgba( 255, 255, 255, 0.1 );
     backdrop-filter: blur( 1px );
     -webkit-backdrop-filter: blur( 1px );
     border-radius: 5px;

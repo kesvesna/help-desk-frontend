@@ -32,8 +32,8 @@
                     </div>
                     <div class="row col-12 mx-auto row-cols-1 row-cols-md-2 row-cols-xxl-4">
                         <div class="col mt-3">
-                            <label for="date" class="form-label" style="color: white;">Дата</label>
-                            <input disabled type="datetime-local" id="date" name="date" class="form-control" style="background: rgba( 255, 255, 255, 0.5 );">
+                            <label for="date" class="form-label" style="color: white;">Дата/Время</label>
+                            <input disabled type="datetime-local" value="2017-06-01T08:30" id="date" name="date" class="form-control" style="background: rgba( 255, 255, 255, 0.5 );">
                         </div>
                         <div class="col mt-3">
                             <label for="trk_id" class="form-label" style="color: white;">Торговый комплекс</label>
@@ -77,6 +77,12 @@
                             </a>
                         </div>
                     </div>
+                    <div class="row col-12 mx-auto row-cols-1">
+                        <div class="col">
+                            <hr>
+                            <h5>Если новая:</h5>
+                        </div>
+                    </div>
                     <div class="row col-12 mx-auto row-cols-1 row-cols-md-2 row-cols-xxl-4">
                         <div class="col">
                             <button type="button" class="btn btn-success col-12 mb-3">Принять</button>
@@ -90,6 +96,50 @@
                         <div class="col">
                             <button type="button" class="btn btn-danger col-12 mb-3">Отклонить</button>
                         </div>
+                        <hr>
+                    </div>
+                    <div class="row col-12 mx-auto row-cols-1">
+                        <div class="col">
+                            <h5>Если в обработке:</h5>
+                        </div>
+                    </div>
+                    <div class="row col-12 mx-auto row-cols-1 row-cols-md-2 row-cols-xxl-5">
+                        <div class="col">
+                            <button type="button" class="btn btn-success col-12 mb-3">Выполнена</button>
+                        </div>
+                        <div class="col">
+                            <button type="button" class="btn btn-warning col-12 mb-3">В ремонт</button>
+                        </div>
+                        <div class="col">
+                            <button type="button" class="btn btn-warning col-12 mb-3">Перенаправить</button>
+                        </div>
+                        <div class="col">
+                            <button type="button" class="btn btn-warning col-12 mb-3">Назначить исполнителя</button>
+                        </div>
+                        <div class="col">
+                            <button type="button" class="btn btn-danger col-12 mb-3">Отклонить</button>
+                        </div>
+                        <hr>
+                    </div>
+                    <div class="row col-12 mx-auto row-cols-1">
+                        <div class="col">
+                            <h5>Если в ремонте:</h5>
+                        </div>
+                    </div>
+                    <div class="row col-12 mx-auto row-cols-1 row-cols-md-2 row-cols-xxl-4">
+                        <div class="col">
+                            <button type="button" class="btn btn-success col-12 mb-3">Выполнена</button>
+                        </div>
+                        <div class="col">
+                            <button type="button" class="btn btn-warning col-12 mb-3">Перенаправить</button>
+                        </div>
+                        <div class="col">
+                            <button type="button" class="btn btn-warning col-12 mb-3">Назначить исполнителя</button>
+                        </div>
+                        <div class="col">
+                            <button type="button" class="btn btn-danger col-12 mb-3">Отклонить</button>
+                        </div>
+                        <hr>
                     </div>
                     <!--                <div class="mb-4">-->
                     <!--                    <div class="col-11 col-xs-10 col-sm-10 col-md-10 mx-auto">-->

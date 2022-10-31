@@ -15,11 +15,9 @@
 </head>
 <body>
 <main>
-    <div class="container-fluid">
+    <div class="container-fluid" style="padding-bottom: 15vh;">
         <h5 style="color: white;" class="pt-3">Ремонты</h5>
-        <button class="btn btn-success mb-2">Сброс фильтров</button>
-        <a href="create_by_plan.html" class="btn btn-warning mb-2">Запланировать ремонт</a>
-
+        <button class="btn btn-success btn-sm mb-2">Сброс фильтров</button>
         <table class="table table-bordered table-hover" style="background: rgba( 255, 255, 255, 0.1 );
     backdrop-filter: blur( 1px );
     -webkit-backdrop-filter: blur( 1px );
@@ -104,6 +102,11 @@
             </tr>
             </tbody>
         </table>
+        <div class="row pb-2 d-flex flex-row-reverse pe-5">
+            <a href="create_by_plan.html" style="width: 0">
+                <img src="../icons/plus.svg" alt="Add picture" width="50" height="50">
+            </a>
+        </div>
     </div>
     <div class="collapse fixed-bottom mx-auto bottom-menu-block" id="navbarToggleExternalContent">
         <div class="pt-3 pb-3 d-flex align-items-center bottom-menu-block-child">
@@ -112,13 +115,6 @@
             <a class="nav-link" href="../repair/index.html"><h5>Ремонт</h5></a>
             <a class="nav-link" href="../act/index.html"><h5>Акты</h5></a>
             <a class="nav-link" href="../admin/index.html"><h5>Админ панель</h5></a>
-        </div>
-    </div>
-    <div class="position-relative">
-        <div class="position-absolute bottom-0 end-0 mb-4 me-3">
-            <a href="create_by_plan.html">
-                <img src="../icons/plus.svg" alt="Add picture" width="50" height="50">
-            </a>
         </div>
     </div>
 </main>

@@ -72,6 +72,12 @@ footer {
     display: none;
 }
 
+@media (max-width: 992px) {
+    .bottom-menu-block {
+        margin-bottom: 13vh;
+    }
+}
+
 
 
 

@@ -27,13 +27,13 @@ footer {
     border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 
-.bottom-frontend-menu {
+.bottom-menu-block {
     width: 60vw; border-radius: 16px;
     box-shadow: 0 10px 60px rgba(0, 0, 0, 0.4);
     margin-bottom: 11vh;
 }
 
-.bottom-frontend-menu-child {
+.bottom-menu-block-child {
     flex-direction: column;
     background: rgba(255, 255, 255, 0.5);
     border-radius: 10px;
@@ -72,8 +72,6 @@ footer {
     display: none;
 }
 
-.owl-dots {
-}
 
 
 

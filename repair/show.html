@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="keywords" content="">
     <link rel="stylesheet" href="../css/styles.css">
-    <link rel="stylesheet" href="../css/application_styles.css">
+    <link rel="stylesheet" href="../css/repair_styles.css">
     <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="../owlcarousel/css/owl.carousel.min.css">
     <link rel="stylesheet" href="../owlcarousel/css/owl.theme.default.min.css">
@@ -23,20 +23,19 @@
                             border-radius: 5px;
                             border: 1px solid rgba( 255, 255, 255, 0.18 );"
                   class="pt-2 pb-3">
-                <div class="d-flex justify-content-center">
-                    <div class="col-10">
-                        <h4 style="color: white;">Ремонт</h4>
+                <div>
+                    <div class="row col-12 mx-auto row-cols-1">
+                        <div class="col">
+                            <h4 style="color: white;">Ремонт № 34</h4>
+                        </div>
                     </div>
                 </div>
-                <div class="col-10 mx-auto">
-                    <div class="col-3">
-                        <input disabled type="datetime-local" id="date" name="date" class="form-control mb-3" style="background: rgba( 255, 255, 255, 0.5 );">
+                <div class="row col-12 mx-auto row-cols-1 row-cols-md-2 row-cols-xxl-4">
+                    <div class="col mt-3">
+                        <label for="date" class="form-label" style="color: white;">Дата/Время</label>
+                        <input disabled type="datetime-local" value="2017-06-01T08:30" id="date" name="date" class="form-control" style="background: rgba( 255, 255, 255, 0.5 );">
                     </div>
-                    <div class="col-3">
-                    </div>
-                </div>
-                <div class="mb-3 d-lg-flex justify-content-between col-10 mx-auto">
-                    <div class="col-11 col-sm-10 col-md-10 col-lg-3">
+                    <div class="col mt-3">
                         <label for="trk_id" class="form-label" style="color: white;">Торговый комплекс</label>
                         <select disabled id="trk_id" name="trk_id" class="form-select" style="background: rgba( 255, 255, 255, 0.5 );">
                             <option value="1">Академ Парк</option>
@@ -46,7 +45,7 @@
                             <option value="5">Европолис (м.Ростокино)</option>
                         </select>
                     </div>
-                    <div class="col-11 col-sm-10 col-md-10 col-lg-3">
+                    <div class="col mt-3">
                         <label for="system_id" class="form-label" style="color: white;">Подразделение</label>
                         <select disabled id="system_id" name="system_id" class="form-select" style="background: rgba( 255, 255, 255, 0.5 );">
                             <option value="1">Служба эксплуатации</option>
@@ -55,39 +54,48 @@
                             <option value="4">АСУ</option>
                         </select>
                     </div>
-                    <div class="col-11 col-xs-11 col-sm-10 col-md-10 col-lg-2">
+                    <div class="col mt-3">
                         <label for="status_id" class="form-label" style="color: white;">Статус ремонта</label>
                         <select disabled id="status_id" name="status_id" class="form-select" style="background: rgba( 255, 255, 255, 0.5 );">
                             <option value="1">По плану</option>
                             <option value="2">По заявке</option>
-                            <option value="3">Выполнен</option>
+                            <option value="4">Выполнен</option>
+                            <option value="4">Отклонен</option>
                         </select>
                     </div>
                 </div>
-                <div class="mb-4">
-                    <div class="col-11 col-xs-10 col-sm-10 col-md-10 mx-auto">
-                        <label for="comment" class="form-label" style="color: white;">Проблема/Задача</label>
-                        <textarea disabled class="form-control" id="comment" name="comment" rows="2" style="background: rgba( 255, 255, 255, 0.5 );">Необходим ремонт
-                        </textarea>
+                <div class="row col-12 mx-auto row-cols-1 mt-3">
+                    <div class="col">
+                        <label for="comment" class="form-label" style="color: white;">Задача</label>
+                        <textarea disabled class="form-control" id="comment" name="comment" rows="2" style="background: rgba( 255, 255, 255, 0.5 );"></textarea>
                     </div>
                 </div>
-                <div class="mb-4">
-                    <div class="col-11 col-xs-10 col-sm-10 col-md-10 mx-auto">
-                        <img src="../img/second.jpg" alt="Application image" class="col-6">
-                </div>
-                </div>
-                <div class="mb-4">
-                    <div class="col-11 col-xs-10 col-sm-10 col-md-10 mx-auto">
-                        <div class="btn-group col-12" role="group" aria-label="Application status">
-                            <button type="button" class="btn btn-success me-2">Выполнен</button>
-                            <button type="button" class="btn btn-warning me-2">Перенаправить</button>
-                            <button type="button" class="btn btn-warning me-2">Назначить исполнителя</button>
-                            <button type="button" class="btn btn-danger">Отклонить</button>
-                        </div>
+                <div class="row col-12 mx-auto row-cols-1 my-4">
+                    <div class="col">
+                        <a href="../img/second.jpg" target="_blank">
+                            <img src="../img/second.jpg" alt="Application image" class="col-12">
+                        </a>
                     </div>
                 </div>
-                <div class="d-grid gap-2 d-sm-flex justify-content-sm-between col-11 mx-auto col-sm-10">
-                    <button onClick="history.back()" class="btn btn-success col-12" type="button">Назад</button>
+                <div class="mt-3 row col-12 mx-auto row-cols-1 row-cols-md-2 row-cols-xxl-4">
+                    <div class="col">
+                        <button type="button" class="btn btn-success col-12 mb-3">Выполнен</button>
+                    </div>
+                    <div class="col">
+                        <button type="button" class="btn btn-warning col-12 mb-3">Перенаправить</button>
+                    </div>
+                    <div class="col">
+                        <button type="button" class="btn btn-warning col-12 mb-3">Назначить исполнителя</button>
+                    </div>
+                    <div class="col">
+                        <button type="button" class="btn btn-danger col-12 mb-3">Отклонить</button>
+                    </div>
+                    <hr>
+                </div>
+                <div class="row col-12 mx-auto row-cols-1">
+                    <div class="col">
+                        <button onClick="history.back()" class="btn btn-success col-12" type="button">Назад</button>
+                    </div>
                 </div>
             </form>
         </div>

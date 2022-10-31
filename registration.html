@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Help Desk | FG</title>
+    <link rel="icon" type="image/x-icon" href="./icons/repair.svg">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/registraiton_styles.css">
+</head>
+<body>
+<div class="container-fluid d-flex align-items-center">
+ <div class="container mb-3 mt-3">
+     <form action="" method="post"  style="background: rgba( 255, 255, 255, 0.1 );
+                            backdrop-filter: blur( 1px );
+                            -webkit-backdrop-filter: blur( 1px );
+                            border-radius: 5px;
+                            border: 1px solid rgba( 255, 255, 255, 0.18 );">
+             <div class="row col-12 mx-auto row-cols-1 mt-2">
+                 <div class="col">
+                     <h4 style="color: white;">Регистрация</h4>
+                 </div>
+             </div>
+         <div class="row col-12 mx-auto row-cols-1 row-cols-md-2 row-cols-xxl-2">
+             <div class="col mt-2">
+                 <label for="email" class="form-label" style="color: white;">Электронная почта</label>
+                 <input class="form-control" type="email" id="email" name="email" required placeholder="i.ivanov@email.com" style="background: rgba( 255, 255, 255, 0.5 );">
+             </div>
+             <div class="col mt-2">
+                 <label for="surname" class="form-label" style="color: white;">Фамилия и инициалы</label>
+                 <input class="form-control" type="text" id="surname" name="surname" required placeholder="Иванов И.И." style="background: rgba( 255, 255, 255, 0.5 );">
+             </div>
+         </div>
+         <div class="row col-12 mx-auto row-cols-1 row-cols-md-2 row-cols-xxl-2">
+             <div class="col mt-2">
+                 <label for="system_id" class="form-label" style="color: white;">Подразделение</label>
+                 <select id="system_id" name="system_id" class="form-select" style="background: rgba( 255, 255, 255, 0.5 );">
+                     <option value="1">Служба эксплуатации</option>
+                     <option value="2">Администрация</option>
+                     <option value="3">ХВО</option>
+                     <option value="4">АСУ</option>
+                     <option value="5">ТСО</option>
+                     <option value="6">Арендатор</option>
+                     <option value="7">Подрядчик</option>
+                     <option value="8">Клининг</option>
+                 </select>
+             </div>
+             <div class="col mt-2">
+                 <label for="trk_id" class="form-label" style="color: white;">Торговый комплекс</label>
+                 <select id="trk_id" name="trk_id" class="form-select" style="background: rgba( 255, 255, 255, 0.5 );">
+                     <option value="1">Академ Парк</option>
+                     <option value="2">Гудзон</option>
+                     <option value="3">Европолис (м.Лесная)</option>
+                     <option value="4">Родео Драйв</option>
+                     <option value="5">Европолис (м.Ростокино)</option>
+                 </select>
+             </div>
+         </div>
+         <div class="row col-12 mx-auto row-cols-1 row-cols-md-2 row-cols-xxl-2">
+             <div class="col mt-2">
+                 <label for="password" class="form-label" style="color: white;">Пароль</label>
+                 <input class="form-control" type="password" id="password" name="password" required style="background: rgba( 255, 255, 255, 0.5 );">
+             </div>
+             <div class="col mt-2">
+                 <label for="password_repeat" class="form-label" style="color: white;">Повторите пароль</label>
+                 <input class="form-control" type="password" id="password_repeat" required name="password_repeat" style="background: rgba( 255, 255, 255, 0.5 );">
+             </div>
+         </div>
+         <div class="row col-12 mx-auto row-cols-1">
+             <div class="col mt-3">
+                 <button class="btn btn-danger col-12" type="submit">Сохранить</button>
+             </div>
+         </div>
+         <div class="row col-12 mx-auto row-cols-1 row-cols-md-2 row-cols-xxl-2">
+             <div class="col mt-3">
+         <a class="nav-link mb-3" href="login.html" style="color: white;">Уже есть регистрация?</a>
+             </div>
+         </div>
+     </form>
+ </div>
+</div>
+<script defer src="./bootstrap/js/bootstrap.bundle.min.js"></script>
+<script defer src="./js/jquery.min.js"></script>
+</body>
+</html>

@@ -14,6 +14,7 @@
 <body>
 <main>
     <div class="container-fluid">
+        <div class="container" style="padding-bottom: 12vh;">
         <div class="row col-12 mx-auto row-cols-1 pt-2">
             <div class="col">
                 <h5 style="color: white;">Заявки</h5>
@@ -33,7 +34,7 @@
                     <option value="5">Европолис (м.Ростокино)</option>
                 </select>
             </div>
-            <div class="col">
+            <div class="col pt-2">
                 <label for="system_id" class="form-label" style="color: white;">Подразделение</label>
                 <select id="system_id" name="system_id" class="form-select" style="background: rgba( 255, 255, 255, 0.5 );">
                     <option value="1">Служба эксплуатации</option>
@@ -42,7 +43,7 @@
                     <option value="4">АСУ</option>
                 </select>
             </div>
-            <div class="col">
+            <div class="col pt-2">
                 <label for="status_id" class="form-label" style="color: white;">Статус заявки</label>
                 <select id="status_id" name="status_id" class="form-select" style="background: rgba( 255, 255, 255, 0.5 );">
                     <option value="1">Новая</option>
@@ -110,7 +111,7 @@
                     </select>
                 </td>
                 <td colspan="4">
-                    <input  style="background: rgba( 255, 255, 255, 0.5 );" name="equipment" type="text" class="form-control" placeholder="Поиск" aria-label="equipment" aria-describedby="equipment">
+                    <input  style="background: rgba( 255, 255, 255, 0.5 );" name="equipment" type="search" class="form-control" placeholder="Поиск" aria-label="equipment" aria-describedby="equipment">
                 </td>
             </tr>
             <tr style="color: white;"  onclick="window.location='show.html';">
@@ -136,10 +137,15 @@
             </tr>
             </tbody>
         </table>
+            <div class="row pb-2 d-flex flex-row-reverse pe-5">
+                <a href="create.html" style="width: 0">
+                    <img src="../icons/plus.svg" alt="Add picture" width="50" height="50">
+                </a>
+            </div>
     </div>
     <div class="collapse fixed-bottom mx-auto" style="width: 60vw; border-radius: 16px;
           box-shadow: 0 10px 60px rgba(0, 0, 0, 0.4); margin-bottom: 10vh;" id="navbarToggleExternalContent">
-        <div class="pt-3 pb-3 d-flex align-items-center"
+        <div class="pt-3 d-flex align-items-center"
              style=" flex-direction: column;
           background: rgba(255, 255, 255, 0.5);
           border-radius: 10px;
@@ -153,12 +159,7 @@
             <a class="nav-link" href="../admin/index.html"><h5>Админ панель</h5></a>
         </div>
     </div>
-    <div class="position-relative">
-        <div class="position-absolute bottom-0 end-0 mb-4 me-3">
-            <a href="create.html">
-                <img src="../icons/plus.svg" alt="Add picture" width="50" height="50">
-            </a>
-        </div>
+
     </div>
 </main>
 <footer>

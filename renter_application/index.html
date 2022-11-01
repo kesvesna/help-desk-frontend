@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Help Desk | FG</title>
+    <link rel="icon" type="image/x-icon" href="../icons/repair.svg">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/application_styles.css">
+</head>
+<body>
+<main>
+    <div class="container-fluid" style="padding-bottom: 15vh;">
+        <div class="row col-12 mx-auto row-cols-1 pt-2">
+            <div class="col">
+                <h5 style="color: white;">Заявки от арендаторов</h5>
+            </div>
+            <div class="col pt-2">
+                <button class="btn btn-success btn-sm">Сброс фильтров</button>
+            </div>
+            </div>
+        <div class="row col-12 mx-auto row-cols-1 row-cols-md-2 row-cols-xxl-3 pt-2 d-md-none">
+            <div class="col">
+                <label for="trk_id" class="form-label" style="color: white;">Торговый комплекс</label>
+                <select id="trk_id" name="trk_id" class="form-select" style="background: rgba( 255, 255, 255, 0.5 );">
+                    <option value="1">Академ Парк</option>
+                    <option value="2">Гудзон</option>
+                    <option value="3">Европолис (м.Лесная)</option>
+                    <option value="4">Родео Драйв</option>
+                    <option value="5">Европолис (м.Ростокино)</option>
+                </select>
+            </div>
+            <div class="col pt-2">
+                <label for="renter_application_status_id" class="form-label" style="color: white;">Статус</label>
+                <select id="renter_application_status_id" name="renter_application_status_id" class="form-select" style="background: rgba( 255, 255, 255, 0.5 );">
+                    <option value="1">Новая</option>
+                    <option value="2">На рассмотрении</option>
+                    <option value="3">Отклонена</option>
+                    <option value="4">Согласована</option>
+                </select>
+            </div>
+        </div>
+        <table class="table table-bordered table-hover mt-4" style="background: rgba( 255, 255, 255, 0.1 );
+    backdrop-filter: blur( 1px );
+    -webkit-backdrop-filter: blur( 1px );
+    border-radius: 5px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );">
+            <thead>
+            <tr>
+                <th scope="col" style="width: 15%;" class="d-none d-sm-table-cell">Дата
+                    <button class="btn">
+                        <img class="" src="../icons/arrow-down-up.svg" alt="Arrow-down-up" width="20" height="20">
+                    </button>
+                </th>
+                <th scope="col" style="width: 20%;"  class="d-none d-lg-table-cell">
+                    ТРК
+                </th>
+                <th scope="col" style="width: 20%;" class="d-none d-md-table-cell">
+                    Статус
+                </th>
+                <th scope="col" style="width: 15%;"  class="d-none d-md-table-cell">Арендатор? (брэнд или юр.лицо)</th>
+                <th scope="col">Вид работ</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td class="d-none d-sm-table-cell">
+                    <input  style="background: rgba( 255, 255, 255, 0.5 );" name="date" type="datetime-local" class="form-control" placeholder="Поиск" aria-label="date" aria-describedby="date">
+                </td>
+                <td class="d-none d-lg-table-cell">
+                    <select class="form-select" aria-label="trk" style="background: rgba( 255, 255, 255, 0.5 );" >
+                        <option selected>Все</option>
+                        <option value="1">Академ Парк</option>
+                        <option value="2">Родео Драйв</option>
+                        <option value="3">Гудзон</option>
+                        <option value="4">Европолис (м.Ростокино)</option>
+                    </select>
+                </td>
+                <td class="d-none d-md-table-cell">
+                    <select class="form-select" aria-label="type" style="background: rgba( 255, 255, 255, 0.5 );" >
+                        <option selected>Все</option>
+                        <option value="1">Новые</option>
+                        <option value="2">На рассмотрении</option>
+                        <option value="3">Отклонены</option>
+                        <option value="4">Согласованы</option>
+                        <option value="4">Выполнены</option>
+                    </select>
+                </td>
+                <td class="d-none d-md-table-cell">
+                    <select class="form-select" aria-label="type" style="background: rgba( 255, 255, 255, 0.5 );" >
+                        <option selected>Все</option>
+                        <option value="1">Перекресток</option>
+                        <option value="2">Samsung</option>
+                        <option value="3">Рив Гош</option>
+                        <option value="3">Линз Мастер</option>
+                        <option value="3">Сбербанк</option>
+                    </select>
+                </td>
+                <td class="d-none d-md-table-cell">
+                    <select class="form-select" aria-label="type" style="background: rgba( 255, 255, 255, 0.5 );" >
+                        <option selected>Все</option>
+                        <option value="1">Ввоз ТМЦ</option>
+                        <option value="2">Вывоз ТМЦ</option>
+                        <option value="3">Инвентаризация</option>
+                        <option value="4">Разбор поставки</option>
+                        <option value="5">Переоценка</option>
+                    </select>
+                </td>
+            </tr>
+            <tr style="color: white;"  onclick="window.location='show.html';">
+                <td class="d-none d-sm-table-cell">11-11-2022 10:23</td>
+                <td class="d-none d-lg-table-cell">Академ Парк</td>
+                <td class="d-none d-md-table-cell">Выполнена</td>
+                <td class="d-none d-md-table-cell">Перекресток</td>
+                <td>Ввоз ТМЦ</td>
+            </tr>
+            <tr style="color: white;"  onclick="window.location='show.html';">
+                <td class="d-none d-sm-table-cell">11-11-2022 10:23</td>
+                <td class="d-none d-lg-table-cell">Европолис</td>
+                <td class="d-none d-md-table-cell">Выполнена</td>
+                <td class="d-none d-md-table-cell">Леонардо да Винчи</td>
+                <td>Вывоз ТМЦ</td>
+            </tr>
+            <tr style="color: white;"  onclick="window.location='show.html';">
+                <td class="d-none d-sm-table-cell">11-11-2022 10:23</td>
+                <td class="d-none d-lg-table-cell">Европолис</td>
+                <td class="d-none d-md-table-cell">На рассмотрении</td>
+                <td class="d-none d-md-table-cell">Рив Гощ</td>
+                <td>Инвентаризация</td>
+            </tr>
+            </tbody>
+        </table>
+            <div class="row pb-2 d-flex flex-row-reverse pe-5">
+                <a href="create.html" style="width: 0">
+                    <img src="../icons/plus.svg" alt="Add picture" width="50" height="50">
+                </a>
+            </div>
+    </div>
+        <div class="collapse fixed-bottom mx-auto bottom-menu-block" id="navbarToggleExternalContent">
+            <div class="pt-3 pb-3 d-flex align-items-center bottom-menu-block-child">
+            <a class="nav-link" href="../chat/index.html"><h5>Чат заявок</h5></a>
+            <a class="nav-link" href="../application/index.html"><h5>Заявки</h5></a>
+            <a class="nav-link" href="../repair/index.html"><h5>Ремонт</h5></a>
+            <a class="nav-link" href="../act/index.html"><h5>Акты</h5></a>
+            <a class="nav-link" href="../admin/index.html"><h5>Админ панель</h5></a>
+        </div>
+    </div>
+</main>
+<footer>
+    <nav class="navbar fixed-bottom justify-content-around">
+        <a href="../index.html" class="btn">
+            <img src="../icons/home.svg" alt="Profile icon" width="30" height="30">
+        </a>
+        <button class="navbar-toggler btn" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <button onClick="history.back()" class="btn">
+            <img src="../icons/back.svg" alt="Profile icon" width="30" height="30">
+        </button>
+    </nav>
+</footer>
+<script defer src="../bootstrap/js/bootstrap.bundle.min.js"></script>
+<script defer src="../js/jquery.min.js"></script>
+</body>
+</html>

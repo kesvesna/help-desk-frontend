@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Help Desk | FG</title>
+    <link rel="icon" type="image/x-icon" href="../icons/repair.svg">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/application_styles.css">
+</head>
+<body>
+<main>
+    <div class="container-fluid" style="padding-bottom: 15vh;">
+            <form style="background: rgba( 255, 255, 255, 0.1 );
+                            backdrop-filter: blur( 1px );
+                            -webkit-backdrop-filter: blur( 1px );
+                            border-radius: 5px;
+                            border: 1px solid rgba( 255, 255, 255, 0.18 );"
+                  class="pt-2 pb-3">
+                <div class="d-flex justify-content-center">
+                    <div class="col-10">
+                        <h4 style="color: white;">Заявка</h4>
+                        <p>Порядок расположения полей, содержание формы ???</p>
+                    </div>
+                </div>
+                <div class="mb-3 d-lg-flex justify-content-around">
+                    <div class="col-11 col-sm-10 col-md-10 col-lg-4 mx-auto">
+                        <label for="trk_id" class="form-label" style="color: white;">Торговый комплекс</label>
+                        <select id="trk_id" name="trk_id" class="form-select" style="background: rgba( 255, 255, 255, 0.5 );">
+                            <option value="1">Академ Парк</option>
+                            <option value="2">Гудзон</option>
+                            <option value="3">Европолис (м.Лесная)</option>
+                            <option value="4">Родео Драйв</option>
+                            <option value="5">Европолис (м.Ростокино)</option>
+                        </select>
+                    </div>
+                    <div class="col-11 col-sm-10 col-md-10 col-lg-4 mx-auto mt-2">
+                        <label for="renter_work_type_id" class="form-label" style="color: white;">Виды работ</label>
+                        <select autofocus id="renter_work_type_id" name="renter_work_type_id" class="form-select" style="background: rgba( 255, 255, 255, 0.5 );">
+                            <option value="1">Ввоз ТМЦ</option>
+                            <option value="2">Вывоз ТМЦ</option>
+                            <option value="3">Инвентаризация</option>
+                            <option value="4">Разбор поставки</option>
+                            <option value="5">Переоценка</option>
+                            <option value="6" style="color: yellowgreen">Монтаж ???</option>
+                            <option value="7" style="color: yellowgreen">Демонтаж ???</option>
+                            <option value="8">Уборка</option>
+                            <option value="9" style="color: yellowgreen">Ремонт ???</option>
+                            <option value="10" style="color: yellowgreen">Изготовление магнитной карты ???</option>
+                            <option value="11" style="color: yellowgreen">Промоакция ???</option>
+                            <option value="12" style="color: yellowgreen">Подать список сотрудников ???</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="mb-3 d-lg-flex justify-content-around">
+                    <div class="col-11 col-sm-10 col-md-10 col-lg-2 mx-auto">
+                        <label for="entity" class="form-label" style="color: white;">Юр. лицо</label>
+                        <input class="form-control" type="text" id="entity" style="background: rgba( 255, 255, 255, 0.5 );">
+                    </div>
+                    <div class="col-11 col-sm-10 col-md-10 col-lg-2 mx-auto mt-2">
+                        <label for="room_id" class="form-label" style="color: white;">Помещение</label>
+                        <select id="room_id" name="room_id" class="form-select" style="background: rgba( 255, 255, 255, 0.5 );">
+                            <option value="1">B20</option>
+                            <option value="2">C15</option>
+                            <option value="3">D4</option>
+                            <option value="4">E23</option>
+                        </select>
+                    </div>
+                    <div class="col-11 col-sm-10 col-md-10 col-lg-2 mx-auto mt-2">
+                        <label for="renter_brand_id" class="form-label" style="color: white;">Торговая марка</label>
+                        <select id="renter_brand_id" name="renter_brand_id" class="form-select" style="background: rgba( 255, 255, 255, 0.5 );">
+                            <option value="1">Спорт Мастер</option>
+                            <option value="2">Перекресток</option>
+                            <option value="3">Intimissimi</option>
+                            <option value="4">Samsung</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="mb-3 d-lg-flex justify-content-around">
+                    <div class="col-11 col-sm-10 col-md-10 col-lg-4 mx-auto">
+                        <label class="mb-2" for="work_start_time" style="color: white;">Дата и время начала работ:</label>
+                        <br>
+                        <input type="datetime-local" id="work_start_time" name="date" class="form-control" style="background: rgba( 255, 255, 255, 0.5 );">
+                    </div>
+                    <div class="col-11 col-sm-10 col-md-10 col-lg-4 mx-auto">
+                        <label class="mb-2" for="work_finish_time" style="color: white;">Дата и время окончания работ:</label>
+                        <br>
+                        <input type="datetime-local" id="work_finish_time" name="work_finish_time" class="form-control" style="background: rgba( 255, 255, 255, 0.5 );">
+                    </div>
+                </div>
+                <div class="mb-4">
+                    <div class="col-11 col-xs-10 col-sm-10 col-md-10 mx-auto">
+                        <label for="persons_list" class="form-label" style="color: white;">Список лиц</label>
+                        <textarea class="form-control" id="persons_list" name="persons_list" rows="2" style="background: rgba( 255, 255, 255, 0.5 );">Иванов И.И., 89046137862; Петров П.П., 89046137862; Сидоров С.С.; 89046137862</textarea>
+                    </div>
+                </div>
+                <div class="mb-4">
+                    <div class="col-11 col-xs-10 col-sm-10 col-md-10 mx-auto">
+                        <label for="responsible_person" class="form-label" style="color: white;">Ответственный</label>
+                        <textarea class="form-control" id="responsible_person" name="responsible_person" rows="1" style="background: rgba( 255, 255, 255, 0.5 );">Алилуев А.А.; 89046137862</textarea>
+                    </div>
+                </div>
+                <div class="mb-4">
+                    <div class="col-11 col-xs-10 col-sm-10 col-md-10 mx-auto">
+                        <label for="file" class="form-label" style="color: white;">Сканы</label>
+                        <input class="form-control" type="file" id="file" name="file" multiple>
+                        </div>
+                </div>
+                <div class="mb-4">
+                    <div class="col-11 col-xs-10 col-sm-10 col-md-10 mx-auto">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                    <label class="form-check-label" for="flexCheckChecked">
+                        Оповещать меня
+                    </label>
+                </div>
+                    </div>
+                </div>
+                <div class="d-grid gap-2 d-sm-flex justify-content-sm-between col-11 mx-auto col-sm-10">
+                    <button class="btn btn-danger col-sm-5" type="button">Сохранить</button>
+                    <button onClick="history.back()" class="btn btn-success col-sm-5" type="button">Назад</button>
+                </div>
+            </form>
+        </div>
+        <div class="collapse fixed-bottom mx-auto bottom-menu-block" id="navbarToggleExternalContent">
+            <div class="pt-3 pb-3 d-flex align-items-center bottom-menu-block-child">
+                <a class="nav-link" href="../chat/index.html"><h5>Чат заявок</h5></a>
+                <a class="nav-link" href="../application/index.html"><h5>Заявки</h5></a>
+                <a class="nav-link" href="../repair/index.html"><h5>Ремонт</h5></a>
+                <a class="nav-link" href="../act/index.html"><h5>Акты</h5></a>
+                <a class="nav-link" href="../admin/index.html"><h5>Админ панель</h5></a>
+            </div>
+        </div>
+</main>
+<footer>
+    <nav class="navbar fixed-bottom justify-content-around">
+        <a href="../index.html" class="btn">
+            <img src="../icons/home.svg" alt="Profile icon" width="30" height="30">
+        </a>
+        <button class="navbar-toggler btn" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <button onClick="history.back()" class="btn">
+            <img src="../icons/back.svg" alt="Profile icon" width="30" height="30">
+        </button>
+    </nav>
+</footer>
+<script defer src="../bootstrap/js/bootstrap.bundle.min.js"></script>
+<script defer src="../js/jquery.min.js"></script>
+</body>
+</html>

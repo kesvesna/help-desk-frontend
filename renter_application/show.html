@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Help Desk | FG</title>
+    <link rel="icon" type="image/x-icon" href="../icons/repair.svg">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/application_styles.css">
+</head>
+<body>
+<main>
+    <div class="container-fluid pt-3" style="padding-bottom: 15vh;">
+                <form style="background: rgba( 255, 255, 255, 0.1 );
+                            backdrop-filter: blur( 1px );
+                            -webkit-backdrop-filter: blur( 1px );
+                            border-radius: 5px;
+                            border: 1px solid rgba( 255, 255, 255, 0.18 );" class="pt-2 pb-3">
+                    <div>
+                        <div class="row col-12 mx-auto row-cols-1">
+                            <div class="col">
+                            <h4 style="color: white;">Заявка</h4>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="row col-12 mx-auto row-cols-1 row-cols-md-2 row-cols-xxl-4">
+                        <div class="col mt-3">
+                            <label for="date" class="form-label" style="color: white;">Дата/Время</label>
+                            <input disabled type="datetime-local" value="2017-06-01T08:30" id="date" name="date" class="form-control" style="background: rgba( 255, 255, 255, 0.5 );">
+                        </div>
+                        <div class="col mt-3">
+                            <label for="trk_id" class="form-label" style="color: white;">Торговый комплекс</label>
+                            <select disabled id="trk_id" name="trk_id" class="form-select" style="background: rgba( 255, 255, 255, 0.5 );">
+                                <option value="1">Академ Парк</option>
+                                <option value="2">Гудзон</option>
+                                <option value="3">Европолис (м.Лесная)</option>
+                                <option value="4">Родео Драйв</option>
+                                <option value="5">Европолис (м.Ростокино)</option>
+                            </select>
+                        </div>
+                        <div class="col mt-3">
+                            <label for="system_id" class="form-label" style="color: white;">Вид работ</label>
+                            <select disabled id="system_id" name="system_id" class="form-select" style="background: rgba( 255, 255, 255, 0.5 );">
+                                <option value="1">Ввоз ТМЦ</option>
+                                <option value="2">Вывоз ТМЦ</option>
+                                <option value="3">Инвентаризация</option>
+                                <option value="4">Разбор поставки</option>
+                            </select>
+                        </div>
+                        <div class="col mt-3">
+                            <label for="status_id" class="form-label" style="color: white;">Статус</label>
+                            <select disabled id="status_id" name="status_id" class="form-select" style="background: rgba( 255, 255, 255, 0.5 );">
+                                <option value="1">Новая</option>
+                                <option value="2">На рассмотрении</option>
+                                <option value="3">Согласована</option>
+                                <option value="4">Выполнена</option>
+                                <option value="5">Отклонена</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row col-12 mx-auto row-cols-1 row-cols-md-2 row-cols-xxl-4">
+                        <div class="col mt-3">
+                            <label class="mb-2" for="work_start_time" style="color: white;">Дата и время начала работ:</label>
+                            <br>
+                            <input type="datetime-local" value="2017-06-01T08:30"  id="work_start_time" name="date" class="form-control" style="background: rgba( 255, 255, 255, 0.5 );">
+                        </div>
+                        <div class="col mt-3">
+                            <label class="mb-2" for="work_finish_time" style="color: white;">Дата и время окончания работ:</label>
+                            <br>
+                            <input type="datetime-local" value="2017-06-02T08:30" id="work_finish_time" name="work_finish_time" class="form-control" style="background: rgba( 255, 255, 255, 0.5 );">
+                        </div>
+                    </div>
+                    <div class="row col-12 mx-auto row-cols-1 row-cols-md-3 row-cols-xxl-3">
+                        <div class="col mt-3">
+                            <label for="entity" class="form-label" style="color: white;">Юр. лицо</label>
+                            <input class="form-control" type="text" id="entity" style="background: rgba( 255, 255, 255, 0.5 );">
+                        </div>
+                        <div class="col mt-3">
+                            <label for="room_id" class="form-label" style="color: white;">Помещение</label>
+                            <select id="room_id" name="room_id" class="form-select" style="background: rgba( 255, 255, 255, 0.5 );">
+                                <option value="1">B20</option>
+                                <option value="2">C15</option>
+                                <option value="3">D4</option>
+                                <option value="4">E23</option>
+                            </select>
+                        </div>
+                        <div class="col mt-3">
+                            <label for="renter_brand_id" class="form-label" style="color: white;">Торговая марка</label>
+                            <select id="renter_brand_id" name="renter_brand_id" class="form-select" style="background: rgba( 255, 255, 255, 0.5 );">
+                                <option value="1">Спорт Мастер</option>
+                                <option value="2">Перекресток</option>
+                                <option value="3">Intimissimi</option>
+                                <option value="4">Samsung</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row col-12 mx-auto row-cols-1">
+                        <div class="col mt-3">
+                            <label for="persons_list" class="form-label" style="color: white;">Список лиц</label>
+                            <textarea class="form-control" id="persons_list" name="persons_list" rows="2" style="background: rgba( 255, 255, 255, 0.5 );">Иванов И.И., 89046137862; Петров П.П., 89046137862; Сидоров С.С.; 89046137862</textarea>
+                        </div>
+                    </div>
+                    <div class="row col-12 mx-auto row-cols-1">
+                        <div class="col mt-3">
+                            <label for="responsible_person" class="form-label" style="color: white;">Ответственный</label>
+                            <textarea class="form-control" id="responsible_person" name="responsible_person" rows="1" style="background: rgba( 255, 255, 255, 0.5 );">Алилуев А.А.; 89046137862</textarea>
+                        </div>
+                    </div>
+                    <div class="row col-12 mx-auto row-cols-1 my-4">
+                        <div class="col mt-3">
+                            <label class="form-label" style="color: white;">Сканы</label>
+                            <a href="../img/second.jpg" target="_blank">
+                                <img src="../img/second.jpg" alt="Application image" class="col-12">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row col-12 mx-auto row-cols-1">
+                        <div class="col mt-3">
+                            <hr>
+                            <h5>Если новая:</h5>
+                        </div>
+                    </div>
+                    <div class="row col-12 mx-auto row-cols-1 row-cols-md-3 row-cols-xxl-3">
+                        <div class="col mt-3">
+                            <button type="button" class="btn btn-success col-12 mb-3">Принять на рассмотрение</button>
+                        </div>
+                        <div class="col mt-3">
+                            <button type="button" class="btn btn-warning col-12 mb-3">Согласовать</button>
+                        </div>
+                        <div class="col mt-3">
+                            <button type="button" class="btn btn-danger col-12 mb-3">Отклонить</button>
+                        </div>
+                        <hr>
+                    </div>
+                    <div class="row col-12 mx-auto row-cols-1">
+                        <div class="col mt-3">
+                            <h5>Если на рассмотрении:</h5>
+                        </div>
+                    </div>
+                    <div class="row col-12 mx-auto row-cols-1 row-cols-md-2 row-cols-xxl-5">
+                        <div class="col mt-3">
+                            <button type="button" class="btn btn-success col-12 mb-3">Согласовать</button>
+                        </div>
+                        <div class="col mt-3">
+                            <button type="button" class="btn btn-danger col-12 mb-3">Отклонить</button>
+                        </div>
+                        <hr>
+                    </div>
+                    <div class="row col-12 mx-auto row-cols-1">
+                        <div class="col mt-3">
+                            <button onClick="history.back()" class="btn btn-success col-12" type="button">Назад</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+    <div class="collapse fixed-bottom mx-auto bottom-menu-block" id="navbarToggleExternalContent">
+        <div class="pt-3 pb-3 d-flex align-items-center bottom-menu-block-child">
+            <a class="nav-link" href="../chat/index.html"><h5>Чат заявок</h5></a>
+            <a class="nav-link" href="../application/index.html"><h5>Заявки</h5></a>
+            <a class="nav-link" href="../repair/index.html"><h5>Ремонт</h5></a>
+            <a class="nav-link" href="../act/index.html"><h5>Акты</h5></a>
+            <a class="nav-link" href="../admin/index.html"><h5>Админ панель</h5></a>
+        </div>
+    </div>
+</main>
+<footer>
+    <nav class="navbar fixed-bottom justify-content-around">
+        <a href="../index.html" class="btn">
+            <img src="../icons/home.svg" alt="Profile icon" width="30" height="30">
+        </a>
+        <button class="navbar-toggler btn" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <button onClick="history.back()" class="btn">
+            <img src="../icons/back.svg" alt="Profile icon" width="30" height="30">
+        </button>
+    </nav>
+</footer>
+<script defer src="../bootstrap/js/bootstrap.bundle.min.js"></script>
+<script defer src="../js/jquery.min.js"></script>
+</body>
+</html>

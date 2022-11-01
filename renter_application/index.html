@@ -21,8 +21,8 @@
                 <button class="btn btn-success btn-sm">Сброс фильтров</button>
             </div>
             </div>
-        <div class="row col-12 mx-auto row-cols-1 row-cols-md-2 row-cols-xxl-3 pt-2 d-md-none">
-            <div class="col">
+        <div class="row col-12 mx-auto row-cols-1 row-cols-md-2 row-cols-xxl-3 d-md-none">
+            <div class="col mb-2 pt-2">
                 <label for="trk_id" class="form-label" style="color: white;">Торговый комплекс</label>
                 <select id="trk_id" name="trk_id" class="form-select" style="background: rgba( 255, 255, 255, 0.5 );">
                     <option value="1">Академ Парк</option>
@@ -32,15 +32,17 @@
                     <option value="5">Европолис (м.Ростокино)</option>
                 </select>
             </div>
-            <div class="col pt-2">
-                <label for="renter_application_status_id" class="form-label" style="color: white;">Статус</label>
-                <select id="renter_application_status_id" name="renter_application_status_id" class="form-select" style="background: rgba( 255, 255, 255, 0.5 );">
-                    <option value="1">Новая</option>
-                    <option value="2">На рассмотрении</option>
-                    <option value="3">Отклонена</option>
-                    <option value="4">Согласована</option>
+            <div class="col">
+                <label for="room_id" class="form-label" style="color: white;">Помещение</label>
+                <select class="form-select" aria-label="room_id" style="background: rgba( 255, 255, 255, 0.5 );" >
+                    <option selected>Все</option>
+                    <option value="1">B1</option>
+                    <option value="2">C2</option>
+                    <option value="3">D15</option>
+                    <option value="4">E23</option>
                 </select>
             </div>
+
         </div>
         <table class="table table-bordered table-hover mt-4" style="background: rgba( 255, 255, 255, 0.1 );
     backdrop-filter: blur( 1px );
@@ -49,18 +51,19 @@
     border: 1px solid rgba( 255, 255, 255, 0.18 );">
             <thead>
             <tr>
-                <th scope="col" style="width: 15%;" class="d-none d-sm-table-cell">Дата
+                <th scope="col" class="d-none d-sm-table-cell">Дата
                     <button class="btn">
                         <img class="" src="../icons/arrow-down-up.svg" alt="Arrow-down-up" width="20" height="20">
                     </button>
                 </th>
-                <th scope="col" style="width: 20%;"  class="d-none d-lg-table-cell">
+                <th scope="col" class="d-none d-lg-table-cell">
                     ТРК
                 </th>
-                <th scope="col" style="width: 20%;" class="d-none d-md-table-cell">
+                <th scope="col">
                     Статус
                 </th>
-                <th scope="col" style="width: 15%;"  class="d-none d-md-table-cell">Арендатор? (брэнд или юр.лицо)</th>
+                <th scope="col" class="d-none d-md-table-cell">Помещение</th>
+                <th scope="col" class="d-none d-md-table-cell">Арендатор? (брэнд или юр.лицо)</th>
                 <th scope="col">Вид работ</th>
             </tr>
             </thead>
@@ -78,7 +81,7 @@
                         <option value="4">Европолис (м.Ростокино)</option>
                     </select>
                 </td>
-                <td class="d-none d-md-table-cell">
+                <td>
                     <select class="form-select" aria-label="type" style="background: rgba( 255, 255, 255, 0.5 );" >
                         <option selected>Все</option>
                         <option value="1">Новые</option>
@@ -86,6 +89,15 @@
                         <option value="3">Отклонены</option>
                         <option value="4">Согласованы</option>
                         <option value="4">Выполнены</option>
+                    </select>
+                </td>
+                <td class="d-none d-md-table-cell">
+                    <select class="form-select" aria-label="room" style="background: rgba( 255, 255, 255, 0.5 );" >
+                        <option selected>Все</option>
+                        <option value="1">B1</option>
+                        <option value="2">C2</option>
+                        <option value="3">D15</option>
+                        <option value="4">E23</option>
                     </select>
                 </td>
                 <td class="d-none d-md-table-cell">
@@ -98,8 +110,8 @@
                         <option value="3">Сбербанк</option>
                     </select>
                 </td>
-                <td class="d-none d-md-table-cell">
-                    <select class="form-select" aria-label="type" style="background: rgba( 255, 255, 255, 0.5 );" >
+                <td>
+                    <select class="form-select" aria-label="type" style="background: rgba( 255, 255, 255, 0.5 );">
                         <option selected>Все</option>
                         <option value="1">Ввоз ТМЦ</option>
                         <option value="2">Вывоз ТМЦ</option>
@@ -112,21 +124,24 @@
             <tr style="color: white;"  onclick="window.location='show.html';">
                 <td class="d-none d-sm-table-cell">11-11-2022 10:23</td>
                 <td class="d-none d-lg-table-cell">Академ Парк</td>
-                <td class="d-none d-md-table-cell">Выполнена</td>
+                <td style="background: rgba(250, 7, 7, 0.1);">Новая</td>
+                <td class="d-none d-md-table-cell">B15</td>
                 <td class="d-none d-md-table-cell">Перекресток</td>
                 <td>Ввоз ТМЦ</td>
             </tr>
             <tr style="color: white;"  onclick="window.location='show.html';">
                 <td class="d-none d-sm-table-cell">11-11-2022 10:23</td>
                 <td class="d-none d-lg-table-cell">Европолис</td>
-                <td class="d-none d-md-table-cell">Выполнена</td>
+                <td style="background: rgba(7, 250, 7, 0.1);">Выполнена</td>
+                <td class="d-none d-md-table-cell">C15</td>
                 <td class="d-none d-md-table-cell">Леонардо да Винчи</td>
                 <td>Вывоз ТМЦ</td>
             </tr>
             <tr style="color: white;"  onclick="window.location='show.html';">
                 <td class="d-none d-sm-table-cell">11-11-2022 10:23</td>
                 <td class="d-none d-lg-table-cell">Европолис</td>
-                <td class="d-none d-md-table-cell">На рассмотрении</td>
+                <td style="background: rgba(250, 232, 7, 0.1);">На рассмотрении</td>
+                <td class="d-none d-md-table-cell">A4</td>
                 <td class="d-none d-md-table-cell">Рив Гощ</td>
                 <td>Инвентаризация</td>
             </tr>

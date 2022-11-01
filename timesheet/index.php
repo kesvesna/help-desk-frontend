@@ -55,14 +55,36 @@ $days = [
     'Суббота'
 ];
 
-echo($days[(date('w'))] . date(', H:i'));
+$months = [
+    'null',
+    'Январь',
+    'Февраль',
+    'Март',
+    'Апрель',
+    'Май',
+    'Июнь',
+    'Июль',
+    'Август',
+    'Сентябрь',
+    'Октябрь',
+    'Ноябрь',
+    'Декабрь'
+];
+
+$month = $months[(date('w', strtotime($date)))];
+$year = date('Y', strtotime($date));
+
+echo 'Табель на ' . $month . ' ' . $year . ' года.' . '<br><br>';
 
 
 foreach($dates as $date) {
-    echo date('F', (strtotime($date))) . '<br><br>';
-    break;
-}
-
-foreach($dates as $date) {
-    echo date('j \ - \(l\)', strtotime($date)) . '<br>';
+    $day = date('d', strtotime($date)) . ' - ' . $days[(date('w', strtotime($date)))];
+    $day_index = intval(date('w', strtotime($date)));
+    if ($day_index !== 0 && $day_index !== 6) {
+        echo '<input disabled name="day" value="' . $day . '" style="width: 150px; border: none; background-color: lightgreen;" >';
+        echo ' отработано часов ' . '<input name="hours" value="8" style="width: 30px; border: none; background-color: lightgreen;">' . ' переработка ' . '<input name="over_time" value="0" style="width: 30px; border: none; background-color: lightgreen;">' . '<br>';
+    } else {
+        echo '<input disabled name="day" value="' . $day . '" style="width: 150px; border: none; background-color: lightpink;" >';
+        echo ' отработано часов ' . '<input name="hours" value="0" style="width: 30px; border: none; background-color: lightpink;">' . ' переработка ' . '<input name="over_time" value="0" style="width: 30px; border: none; background-color: lightpink;">' . '<br>';
+    }
 }

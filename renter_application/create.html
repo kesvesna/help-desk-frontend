@@ -23,7 +23,6 @@
                 <div class="row col-12 mx-auto row-cols-1">
                     <div class="col">
                         <h4 style="color: white;">Новая заявка</h4>
-                        <p>Порядок расположения полей, содержание формы ???</p>
                     </div>
                 </div>
                 <div class="row col-12 mx-auto row-cols-1 row-cols-md-2 row-cols-xxl-2">
@@ -45,13 +44,13 @@
                             <option value="3">Инвентаризация</option>
                             <option value="4">Разбор поставки</option>
                             <option value="5">Переоценка</option>
-                            <option value="6" style="color: yellowgreen">Монтаж ???</option>
-                            <option value="7" style="color: yellowgreen">Демонтаж ???</option>
+                            <option value="6">Монтаж</option>
+                            <option value="7">Демонтаж</option>
                             <option value="8">Уборка</option>
-                            <option value="9" style="color: yellowgreen">Ремонт ???</option>
-                            <option value="10" style="color: yellowgreen">Изготовление магнитной карты ???</option>
-                            <option value="11" style="color: yellowgreen">Промоакция ???</option>
-                            <option value="12" style="color: yellowgreen">Подать список сотрудников ???</option>
+                            <option value="9">Ремонт</option>
+                            <option value="10" style="color: yellowgreen">Изготовление магнитной карты</option>
+                            <option value="11" style="color: yellowgreen">Промоакция</option>
+                            <option value="12" style="color: yellowgreen">Подать список сотрудников</option>
                         </select>
                     </div>
                 </div>
@@ -70,19 +69,19 @@
                 <div class="row col-12 mx-auto row-cols-1">
                     <div class="col mt-4">
                         <label for="comment" class="form-label" style="color: white;">Описание работ</label>
-                        <textarea class="form-control" id="comment" name="comment" rows="2" style="background: rgba( 255, 255, 255, 0.5 );"></textarea>
+                        <textarea required class="form-control" id="comment" name="comment" rows="2" style="background: rgba( 255, 255, 255, 0.5 );"></textarea>
                     </div>
                 </div>
                 <div class="row col-12 mx-auto row-cols-1">
                     <div class="col mt-4">
                         <label for="persons_list" class="form-label" style="color: white;">Список лиц</label>
-                        <textarea class="form-control" id="persons_list" name="persons_list" rows="2" style="background: rgba( 255, 255, 255, 0.5 );">Иванов И.И., 89046137862; Петров П.П., 89046137862; Сидоров С.С.; 89046137862</textarea>
+                        <textarea required class="form-control" placeholder="ФИО, тел. ; ФИО, тел. ;" id="persons_list" name="persons_list" rows="2" style="background: rgba( 255, 255, 255, 0.5 );"></textarea>
                     </div>
                 </div>
                 <div class="row col-12 mx-auto row-cols-1">
                     <div class="col mt-4">
                         <label for="responsible_person" class="form-label" style="color: white;">Ответственный</label>
-                        <textarea class="form-control" id="responsible_person" name="responsible_person" rows="1" style="background: rgba( 255, 255, 255, 0.5 );">Алилуев А.А.; 89046137862</textarea>
+                        <textarea required class="form-control" placeholder="ФИО, тел." id="responsible_person" name="responsible_person" rows="1" style="background: rgba( 255, 255, 255, 0.5 );"></textarea>
                     </div>
                 </div>
                 <div class="row col-12 mx-auto row-cols-1">

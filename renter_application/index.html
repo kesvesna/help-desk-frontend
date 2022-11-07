@@ -33,16 +33,15 @@
                 </select>
             </div>
             <div class="col">
-                <label for="room_id" class="form-label" style="color: white;">Помещение</label>
-                <select class="form-select" aria-label="room_id" id="room_id" style="background: rgba( 255, 255, 255, 0.5 );" >
+                <label for="brand_id" class="form-label" style="color: white;">Арендатор</label>
+                <select class="form-select" aria-label="brand_id" id="brand_id" style="background: rgba( 255, 255, 255, 0.5 );" >
                     <option selected>Все</option>
-                    <option value="1">B1</option>
-                    <option value="2">C2</option>
-                    <option value="3">D15</option>
-                    <option value="4">E23</option>
+                    <option value="1">Рив Гош</option>
+                    <option value="2">Samsung</option>
+                    <option value="3">Спорт мастер</option>
+                    <option value="4">Guess</option>
                 </select>
             </div>
-
         </div>
         <table class="table table-bordered table-hover mt-4" style="background: rgba( 255, 255, 255, 0.1 );
     backdrop-filter: blur( 1px );
@@ -63,7 +62,7 @@
                     Статус
                 </th>
                 <th scope="col" class="d-none d-md-table-cell">Помещение</th>
-                <th scope="col" class="d-none d-md-table-cell">Арендатор? (брэнд или юр.лицо)</th>
+                <th scope="col" class="d-none d-md-table-cell">Бренд</th>
                 <th scope="col">Вид работ</th>
             </tr>
             </thead>
@@ -85,7 +84,7 @@
                     <select class="form-select" aria-label="type" style="background: rgba( 255, 255, 255, 0.5 );" >
                         <option selected>Все</option>
                         <option value="1">Новые</option>
-                        <option value="2">На рассмотрении</option>
+                        <option value="2">Согласование у инженеров</option>
                         <option value="3">Отклонены</option>
                         <option value="4">Согласованы</option>
                         <option value="4">Выполнены</option>
@@ -122,36 +121,36 @@
                 </td>
             </tr>
             <tr style="color: white;"  onclick="window.location='show.html';">
-                <td class="d-none d-sm-table-cell">11-11-2022 10:23</td>
-                <td class="d-none d-lg-table-cell">Академ Парк</td>
+                <td class="d-none d-sm-table-cell" style="background: rgba(250, 7, 7, 0.1);">11-11-2022 10:23</td>
+                <td class="d-none d-lg-table-cell" style="background: rgba(250, 7, 7, 0.1);">Академ Парк</td>
                 <td style="background: rgba(250, 7, 7, 0.1);">Новая</td>
-                <td class="d-none d-md-table-cell">B15</td>
-                <td class="d-none d-md-table-cell">Перекресток</td>
-                <td>Ввоз ТМЦ</td>
+                <td class="d-none d-md-table-cell" style="background: rgba(250, 7, 7, 0.1);">B15</td>
+                <td class="d-none d-md-table-cell" style="background: rgba(250, 7, 7, 0.1);">Перекресток</td>
+                <td style="background: rgba(250, 7, 7, 0.1);">Ввоз ТМЦ</td>
             </tr>
             <tr style="color: white;"  onclick="window.location='show.html';">
-                <td class="d-none d-sm-table-cell">11-11-2022 10:23</td>
-                <td class="d-none d-lg-table-cell">Европолис</td>
+                <td class="d-none d-sm-table-cell" style="background: rgba(7, 250, 7, 0.1);">11-11-2022 10:23</td>
+                <td class="d-none d-lg-table-cell" style="background: rgba(7, 250, 7, 0.1);">Европолис</td>
                 <td style="background: rgba(7, 250, 7, 0.1);">Выполнена</td>
-                <td class="d-none d-md-table-cell">C15</td>
-                <td class="d-none d-md-table-cell">Леонардо да Винчи</td>
-                <td>Вывоз ТМЦ</td>
+                <td class="d-none d-md-table-cell" style="background: rgba(7, 250, 7, 0.1);">C15</td>
+                <td class="d-none d-md-table-cell" style="background: rgba(7, 250, 7, 0.1);">Леонардо да Винчи</td>
+                <td style="background: rgba(7, 250, 7, 0.1);">Вывоз ТМЦ</td>
             </tr>
             <tr style="color: white;"  onclick="window.location='show.html';">
-                <td class="d-none d-sm-table-cell">11-11-2022 10:23</td>
-                <td class="d-none d-lg-table-cell">Европолис</td>
-                <td style="background: rgba(250, 232, 7, 0.1);">На рассмотрении</td>
-                <td class="d-none d-md-table-cell">A4</td>
-                <td class="d-none d-md-table-cell">Рив Гощ</td>
-                <td>Инвентаризация</td>
+                <td class="d-none d-sm-table-cell" style="background: rgba(250, 232, 7, 0.1);">11-11-2022 10:23</td>
+                <td class="d-none d-lg-table-cell" style="background: rgba(250, 232, 7, 0.1);">Европолис</td>
+                <td style="background: rgba(250, 232, 7, 0.1);">Согласование у инженеров</td>
+                <td class="d-none d-md-table-cell" style="background: rgba(250, 232, 7, 0.1);">A4</td>
+                <td class="d-none d-md-table-cell" style="background: rgba(250, 232, 7, 0.1);">Рив Гош</td>
+                <td style="background: rgba(250, 232, 7, 0.1);">Инвентаризация</td>
             </tr>
             <tr style="color: white;"  onclick="window.location='show.html';">
-                <td class="d-none d-sm-table-cell">11-11-2022 10:23</td>
-                <td class="d-none d-lg-table-cell">Европолис</td>
+                <td class="d-none d-sm-table-cell" style="background: rgba(250, 7, 7, 0.1);">11-11-2022 10:23</td>
+                <td class="d-none d-lg-table-cell" style="background: rgba(250, 7, 7, 0.1);">Европолис</td>
                 <td style="background: rgba(250, 7, 7, 0.1);">Отклонена</td>
-                <td class="d-none d-md-table-cell">В4</td>
-                <td class="d-none d-md-table-cell">Буше</td>
-                <td>Инвентаризация</td>
+                <td class="d-none d-md-table-cell" style="background: rgba(250, 7, 7, 0.1);">В4</td>
+                <td class="d-none d-md-table-cell" style="background: rgba(250, 7, 7, 0.1);">Буше</td>
+                <td style="background: rgba(250, 7, 7, 0.1);">Инвентаризация</td>
             </tr>
             </tbody>
         </table>

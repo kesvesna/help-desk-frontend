@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Help Desk | FG</title>
+    <link rel="icon" type="image/x-icon" href="../../../icons/repair.svg">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" href="../../../css/styles.css">
+    <link rel="stylesheet" href="../../../bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../../css/application_styles.css">
+</head>
+<body>
+<main>
+    <div class="container-fluid pt-3" style="padding-bottom: 15vh;">
+        <form style="background: rgba( 255, 255, 255, 0.1 );
+                            backdrop-filter: blur( 1px );
+                            -webkit-backdrop-filter: blur( 1px );
+                            border-radius: 5px;
+                            border: 1px solid rgba( 255, 255, 255, 0.18 );"
+              class="pt-2 pb-3">
+            <div class="row col-12 mx-auto row-cols-1">
+                <div class="col">
+                    <h4 style="color: white;">Новая заявка</h4>
+                </div>
+            </div>
+            <div class="row col-12 mx-auto row-cols-1 row-cols-md-2 row-cols-xxl-2">
+                <div class="col mb-3">
+                    <label for="trk_id" class="form-label" style="color: white;">Торговый комплекс</label>
+                    <select id="trk_id" name="trk_id" class="form-select" style="background: rgba( 255, 255, 255, 0.5 );">
+                        <option value="1">Академ Парк</option>
+                        <option value="2">Гудзон</option>
+                        <option value="3">Европолис (м.Лесная)</option>
+                        <option value="4">Родео Драйв</option>
+                        <option value="5">Европолис (м.Ростокино)</option>
+                    </select>
+                </div>
+                <div class="col mb-3">
+                    <label for="renter_work_type_id" class="form-label" style="color: white;">Виды работ</label>
+                    <select autofocus id="renter_work_type_id" name="renter_work_type_id" class="form-select" style="background: rgba( 255, 255, 255, 0.5 );">
+                        <option value="10" style="color: yellowgreen">Список сотрудников</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row col-12 mx-auto row-cols-1">
+                <div class="col">
+                    <label for="employees_list" class="form-label" style="color: white;">Сотрудники</label>
+                    <textarea class="form-control" placeholder="ФИО, должность, тел., паспорт;" id="employees_list" name="employees_list" rows="2" style="background: rgba( 255, 255, 255, 0.5 );"></textarea>
+                </div>
+            </div>
+            <div class="row col-12 mx-auto row-cols-1">
+                <div class="col mt-4">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                        <label class="form-check-label" for="flexCheckChecked">
+                            Оповещать меня
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="row col-12 mx-auto row-cols-1 row-cols-md-2 row-cols-xxl-2">
+                <div class="col mt-4">
+                    <button class="btn btn-danger col-12" type="button">Сохранить</button>
+                </div>
+                <div class="col mt-4">
+                    <button onClick="history.back()" class="btn btn-success col-12" type="button">Назад</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="collapse fixed-bottom mx-auto bottom-menu-block" id="navbarToggleExternalContent">
+        <div class="pt-3 pb-3 d-flex align-items-center bottom-menu-block-child">
+            <a class="nav-link" href="../../../chat/index.html"><h5>Чат заявок</h5></a>
+            <a class="nav-link" href="../../../application/index.html"><h5>Заявки</h5></a>
+            <a class="nav-link" href="../../../repair/index.html"><h5>Ремонт</h5></a>
+            <a class="nav-link" href="../../../act/index.html"><h5>Акты</h5></a>
+            <a class="nav-link" href="../../../admin/index.html"><h5>Админ панель</h5></a>
+        </div>
+    </div>
+</main>
+<footer>
+    <nav class="navbar fixed-bottom justify-content-around">
+        <a href="../../../index.html" class="btn">
+            <img src="../../../icons/home.svg" alt="Profile icon" width="30" height="30">
+        </a>
+        <button class="navbar-toggler btn" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <button onClick="history.back()" class="btn">
+            <img src="../../../icons/back.svg" alt="Profile icon" width="30" height="30">
+        </button>
+    </nav>
+</footer>
+<script defer src="../../../bootstrap/js/bootstrap.bundle.min.js"></script>
+<script defer src="../../../js/jquery.min.js"></script>
+</body>
+</html>

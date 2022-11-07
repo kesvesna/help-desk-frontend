@@ -47,30 +47,30 @@
                 <div class="col mb-3">
                     <label class="mb-2" for="work_start_time" style="color: white;">Начало работ:</label>
                     <br>
-                    <input type="datetime-local" id="work_start_time" name="date" class="form-control" style="background: rgba( 255, 255, 255, 0.5 );">
+                    <input required type="datetime-local" id="work_start_time" name="date" class="form-control" style="background: rgba( 255, 255, 255, 0.5 );">
                 </div>
                 <div class="col">
                     <label class="mb-2" for="work_finish_time" style="color: white;">Окончание работ:</label>
                     <br>
-                    <input type="datetime-local" id="work_finish_time" name="work_finish_time" class="form-control" style="background: rgba( 255, 255, 255, 0.5 );">
+                    <input required type="datetime-local" id="work_finish_time" name="work_finish_time" class="form-control" style="background: rgba( 255, 255, 255, 0.5 );">
                 </div>
             </div>
             <div class="row col-12 mx-auto row-cols-1">
                 <div class="col mt-3">
                     <label for="comment" class="form-label" style="color: white;">Описание работ</label>
-                    <textarea class="form-control" id="comment" name="comment" rows="2" style="background: rgba( 255, 255, 255, 0.5 );"></textarea>
+                    <textarea required class="form-control" id="comment" name="comment" rows="2" style="background: rgba( 255, 255, 255, 0.5 );"></textarea>
                 </div>
             </div>
             <div class="row col-12 mx-auto row-cols-1">
                 <div class="col mt-3">
                     <label for="persons_list" class="form-label" style="color: white;">Список лиц</label>
-                    <textarea class="form-control" id="persons_list" name="persons_list" rows="2" style="background: rgba( 255, 255, 255, 0.5 );">Иванов И.И., 89046137862; Петров П.П., 89046137862; Сидоров С.С.; 89046137862</textarea>
+                    <textarea required class="form-control" id="persons_list" placeholder="ФИО, ФИО, ФИО" name="persons_list" rows="2" style="background: rgba( 255, 255, 255, 0.5 );"></textarea>
                 </div>
             </div>
             <div class="row col-12 mx-auto row-cols-1">
                 <div class="col mt-3">
                     <label for="responsible_person" class="form-label" style="color: white;">Ответственный</label>
-                    <textarea class="form-control" id="responsible_person" name="responsible_person" rows="1" style="background: rgba( 255, 255, 255, 0.5 );">Алилуев А.А.; 89046137862</textarea>
+                    <textarea required class="form-control" placeholder="ФИО, тел." id="responsible_person" name="responsible_person" rows="1" style="background: rgba( 255, 255, 255, 0.5 );"></textarea>
                 </div>
             </div>
             <div class="row col-12 mx-auto row-cols-1">
@@ -91,7 +91,7 @@
             </div>
             <div class="row col-12 mx-auto row-cols-1 row-cols-md-2 row-cols-xxl-2">
                 <div class="col mt-4">
-                    <button class="btn btn-danger col-12" type="button">Сохранить</button>
+                    <button class="btn btn-danger col-12" type="submit">Сохранить</button>
                 </div>
                 <div class="col mt-4">
                     <button onClick="history.back()" class="btn btn-success col-12" type="button">Назад</button>

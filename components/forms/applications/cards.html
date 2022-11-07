@@ -43,20 +43,24 @@
                     </select>
                 </div>
             </div>
-            <div class="row col-12 mx-auto row-cols-1">
-                <div class="col">
+            <div class="row col-12 mx-auto row-cols-1 row-cols-md-2 row-cols-xxl-2">
+                <div class="col mb-3">
+                    <label for="count" class="form-label" style="color: white;">Количество карт</label>
+                    <select id="count" name="count" class="form-select" style="background: rgba( 255, 255, 255, 0.5 );">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+                <div class="col mb-3">
                     <label for="responsible_person" class="form-label" style="color: white;">Ответственный</label>
-                    <textarea class="form-control" id="responsible_person" name="responsible_person" rows="1" style="background: rgba( 255, 255, 255, 0.5 );">Алилуев А.А.; 89046137862</textarea>
+                    <textarea required class="form-control" placeholder="ФИО, тел." id="responsible_person" name="responsible_person" rows="1" style="background: rgba( 255, 255, 255, 0.5 );"></textarea>
                 </div>
             </div>
             <div class="row col-12 mx-auto row-cols-1">
-                <div class="col mt-4">
-                    <label for="cards_count" class="form-label" style="color: white;">Количество карт</label>
-                    <input class="form-control" type="number" id="cards_count" name="cards_count" required>
-                </div>
-            </div>
-            <div class="row col-12 mx-auto row-cols-1">
-                <div class="col mt-4">
+                <div class="col mt-1">
                     <div class="form-check">
                         <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
                         <label class="form-check-label" for="flexCheckChecked">
@@ -67,7 +71,7 @@
             </div>
             <div class="row col-12 mx-auto row-cols-1 row-cols-md-2 row-cols-xxl-2">
                 <div class="col mt-4">
-                    <button class="btn btn-danger col-12" type="button">Сохранить</button>
+                    <button class="btn btn-danger col-12" type="submit">Сохранить</button>
                 </div>
                 <div class="col mt-4">
                     <button onClick="history.back()" class="btn btn-success col-12" type="button">Назад</button>
